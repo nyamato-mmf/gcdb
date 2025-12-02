@@ -145,8 +145,22 @@
                     <div class="d-flex justify-content-start mt-2">
                         <a href="#boundary" class="btn btn-outline-primary btn-sm w-100">Boundary</a>
                     </div>
-                    <div class="d-flex justify-content-start mt-2">
-                        <a href="#population" class="btn btn-outline-primary btn-sm w-100">Population</a>
+                    <div class="mt-2">
+                        <button class="btn btn-outline-primary btn-sm w-100 position-relative" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#demographicsSubmenu" 
+                                aria-expanded="false" 
+                                aria-controls="demographicsSubmenu">
+                            Demographics
+                            <span class="position-absolute end-0 me-2">▼</span>
+                        </button>
+                        <div class="collapse mt-1" id="demographicsSubmenu">
+                            <div class="ps-3">
+                                <a href="#population" class="btn btn-outline-secondary btn-sm w-100 mb-1">Population</a>
+                                <a href="#employment" class="btn btn-outline-secondary btn-sm w-100">Employment</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="mt-2">
                         <button class="btn btn-outline-primary btn-sm w-100 position-relative" 
@@ -214,8 +228,9 @@
             </section>
             <!-- ★★★ 指標：人口 ★★★ -->
             <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
-                <h1 id="population" class="display-6 fw-bold">Population</h1>
+                <h1 id="demographics" class="display-6 fw-bold">Demographics</h1>
                     <div class="row">
+                        <h3 id="population" class="display-6">| Population</h3>
                         <div style="position:relative; padding: 0;">
                         <div id="population_country_map" class="col-sm-12 p-3 bg-light border" style="height: 500px;"></div>
                         <!-- Population Density Legend -->
