@@ -169,7 +169,7 @@ setupMap(
 /* -------------------------------------------------------------
     フライト・ネットワーク・マップ
 ------------------------------------------------------------- */
-var path = './data/map/infrastructure/flight_network/geojson/fly-' + cityParam + '_linestring.geojson';
+var path = './data/map/infrastructure/flight_network/geojson/fly-' + cityParam.toLowerCase() + '_linestring.geojson';
 setupMap(
     'flight_network_map', 
     path, 
