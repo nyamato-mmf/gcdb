@@ -180,7 +180,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-start mt-2">
-                        <a href="#city" class="btn btn-outline-primary btn-sm w-100">City</a>
+                        <a href="#dummy" class="btn btn-outline-primary btn-sm w-100">Dummy</a>
                     </div>
                 </fieldset>
                 </div>
@@ -201,8 +201,9 @@
                     </div>
                 </section>
 
-                <!-- ★★★ 指標：区域 ★★★ -->
-                <!-- ローディング・スピナー付き -->
+                <!-- ----------------------------------------------------------------------------
+                    区域 (ローディング・スピナー付)
+                ---------------------------------------------------------------------------- -->
                 <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
                     <h1 id="boundary" class="display-6 fw-bold">Boundary</h1>
                     <div class="row">
@@ -222,34 +223,35 @@
                                 <span class="visually-hidden">Loading...</span>
                             </div>
                             <!-- スピナーここまで -->
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!-- ★★★ 指標：人口 ★★★ -->
-            <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
-                <h1 id="demographics" class="display-6 fw-bold">Demographics</h1>
+                </section>
+                <!-- ----------------------------------------------------------------------------
+                    人口（居住者と従業者）
+                ---------------------------------------------------------------------------- -->
+                <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
+                    <h1 id="demographics" class="display-6 fw-bold">Demographics</h1>
                     <div class="row">
                         <h3 id="population" class="display-6">| Population</h3>
                         <div style="position:relative; padding: 0;">
-                        <div id="population_country_map" class="col-sm-12 p-3 bg-light border" style="height: 500px;"></div>
-                        <!-- Population Density Legend -->
-                        <div id="population-density-legend" class="map-legend" aria-label="Population Density Legend">
-                            <span><span class="legend-color" style="background: #3288bd;"></span> 0 未満</span>
-                            <span><span class="legend-color" style="background: #83e19d;"></span> 0 - 4,999</span>
-                            <span><span class="legend-color" style="background: #fee08b;"></span> 5,000 - 9,999</span>
-                            <span><span class="legend-color" style="background: #f9993b;"></span> 10,000 - 14,999</span>
-                            <span><span class="legend-color" style="background: #ef5305;"></span> 15,000 - 19,999</span>
-                            <span><span class="legend-color" style="background: #d53e4f;"></span> 20,000 - 24,999</span>
-                            <span><span class="legend-color" style="background: #c62240;"></span> 25,000 - 29,999</span>
-                            <span><span class="legend-color" style="background: #b31535;"></span> 30,000 - 34,999</span>
-                            <span><span class="legend-color" style="background: #9f0729;"></span> 35,000 - 39,999</span>
-                            <span><span class="legend-color" style="background: #8b001d;"></span> 40,000 - 44,999</span>
-                            <span><span class="legend-color" style="background: #7a0014;"></span> 45,000 以上</span>
+                            <div id="population_country_map" class="col-sm-12 p-3 bg-light border" style="height: 500px;"></div>
+                            <!-- Population Density Legend -->
+                            <div id="population-density-legend" class="map-legend" aria-label="Population Density Legend">
+                                <span><span class="legend-color" style="background: #3288bd;"></span> 0 未満</span>
+                                <span><span class="legend-color" style="background: #83e19d;"></span> 0 - 4,999</span>
+                                <span><span class="legend-color" style="background: #fee08b;"></span> 5,000 - 9,999</span>
+                                <span><span class="legend-color" style="background: #f9993b;"></span> 10,000 - 14,999</span>
+                                <span><span class="legend-color" style="background: #ef5305;"></span> 15,000 - 19,999</span>
+                                <span><span class="legend-color" style="background: #d53e4f;"></span> 20,000 - 24,999</span>
+                                <span><span class="legend-color" style="background: #c62240;"></span> 25,000 - 29,999</span>
+                                <span><span class="legend-color" style="background: #b31535;"></span> 30,000 - 34,999</span>
+                                <span><span class="legend-color" style="background: #9f0729;"></span> 35,000 - 39,999</span>
+                                <span><span class="legend-color" style="background: #8b001d;"></span> 40,000 - 44,999</span>
+                                <span><span class="legend-color" style="background: #7a0014;"></span> 45,000 以上</span>
+                            </div>
+                            <!-- Population Density Legend End -->
                         </div>
-                        <!-- Population Density Legend End -->
-                        <!-- 凡例ここまで -->
-                    </div>
                     <div class="row g-0">
                         <div class="col-sm-4 p-3 bg-light border" style="height: 350px;">
                             <!-- ★★★ 国 人口変遷グラフ ★★★ -->
@@ -268,7 +270,9 @@
                         </div>
                     </div>
                 </section>
-                <!-- ★★★ 指標： ★★★ -->
+                <!-- ----------------------------------------------------------------------------
+                    交通インフラ
+                ---------------------------------------------------------------------------- -->
                 <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
                     <h1 id="infrastructure" class="display-6 fw-bold">Infrastructure</h1>
                     <div class="row">
@@ -288,9 +292,11 @@
                         <div class="col-sm-6 p-3 bg-light border" style="height: 350px;">グラフ</div>
                     </div> 
                 </section>
-                <!-- ★★★ 指標： ★★★ -->
+                <!-- ----------------------------------------------------------------------------
+                    ダミー
+                ---------------------------------------------------------------------------- -->
                 <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
-                    <h1 id="city" class="display-6 fw-bold">City</h1>
+                    <h1 id="dummy" class="display-6 fw-bold">Dummy</h1>
                     <div class="row">
                         <div class="col-sm-8 p-3 bg-light border" style="height: 350px;">グラフ</div>
                         <div class="col-sm-4 p-3 bg-light border" style="height: 350px;">グラフ</div>
@@ -298,7 +304,8 @@
                     <div class="row">
                         <div class="col-sm-12 p-2 bg-light border" style="height: 350px;">グラフ</div>
                     </div>           
-                    </section>
+                </section>
+                
                 <!-- Bottom margin -->
                 <div class="col-12" style="height: 50px;"></div>
             </div>
