@@ -139,7 +139,7 @@ setupMap(
 ------------------------------------------------------------- */
 setupMap(
     'population_country_map', 
-    './data/map/population/countries/geojson/Japanpop_density_2020.geojson',
+    './data/map/demographics/population/countries/geojson/Japanpop_density_2020.geojson',
     'fill-extrusion',
     {
         'fill-extrusion-color': [
