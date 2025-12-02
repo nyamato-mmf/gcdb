@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="./css/global.css" rel="stylesheet">
+    <link href="./css/modules.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js" 
+    integrity="sha512-asxKqQghC1oBShyhiBwA+YgotaSYKxGP1rcSYTDrB0U6DxwlJjU59B67U8+5/++uFjcuVM8Hh5cokLjZlhm3Vg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer>
+    </script>
+    <!-- Papa Parse CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <!-- Flag Icons CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.3/css/flag-icons.min.css" rel="stylesheet">
+    <!-- Mapbox CDN -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <title>Top</title>
+</head>
+
+<body class="no-scroll-bar" id="bg-image-globe">
+
+    <!-- ----------------------------------------------------------------------------
+    ヘッダー（ナビゲーションバー）
+    ----------------------------------------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./public/img/logo/dashboard.svg" alt="Dashboard Logo" class="navbar-log-size">
+            </a>
+    
+            <!-- Navbar toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cities.html">Cities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./indicators.html">Indicators</a>
+                    </li>
+                </ul>
+
+                <!-- Logout -->
+                <form action="../logout.php" method="post" class="d-inline ms-2">
+                    <button type="submit" class="btn btn-outline-danger btn-sm">Logout</button>
+                </form>
+    
+                <!-- Language Selector (Right-aligned) -->
+                <div class="d-flex align-items-center">
+                    <select class="form-select form-select-sm mx-2" aria-label="Language selection" id="languageSelector">
+                        <option value="en" selected>English</option>
+                        <option value="ja">日本語</option>
+                    </select>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+    
+
+    <!-- ----------------------------------------------------------------------------
+    メインコンテンツ 
+    ----------------------------------------------------------------------------- -->
+    <main class="container-fluid mt-5">
+        
+        <!-- トップページ・タイトル -->
+        <div class="row d-flex justify-content-center align-items-end text-center text-white" id="top-page-title">
+            <div class="col-12">
+                <h1 class="display-1">Global Cities Dashboard</h1>
+                <p style="font-size: 1rem;">This dashboard offers experiences to explore global cities from multiple perspectives.</p>
+            </div>
+        </div>
+            
+        <!-- メニュー選択 -->
+        <div class="row align-items-top" style="height: 30vh;">
+            <div class="col-lg-3 col-sm-2"></div>
+            <div class="col-lg-3 col-sm-4">
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h3 class="card-title text-center"><a href="./cities.html">Cities&nbsp;&gt;</a></h3>
+                        <p>This dashboard offers experiences to explore global cities from multiple perspectives.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4">
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h3 class="card-title text-center"><a href="./indicators.html">Indicators&nbsp;&gt;</a></h3>
+                        <p>This dashboard offers experiences to explore global cities from multiple perspectives.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-2"></div>
+        </div>
+        
+    </main>
+
+    <!-- ----------------------------------------------------------------------------
+    フッター
+    ----------------------------------------------------------------------------- -->
+    <footer class="bg-dark text-light py-2 fixed-bottom">
+    <div class="text-center">
+        <small>
+        Copyright &copy; <span id="year"></span> Mori Memorial Foundation, All rights reserved.
+        </small>
+    </div>
+    </footer>
+
+    <script>
+        // Automatically insert the current year
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    
+    
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>

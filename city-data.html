@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="./css/global.css" rel="stylesheet">
+    <link href="./css/modules.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js" 
+    integrity="sha512-asxKqQghC1oBShyhiBwA+YgotaSYKxGP1rcSYTDrB0U6DxwlJjU59B67U8+5/++uFjcuVM8Hh5cokLjZlhm3Vg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer>
+    </script>
+    <!-- Papa Parse CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <!-- Flag Icons CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.3/css/flag-icons.min.css" rel="stylesheet">
+    <!-- Mapbox CDN -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <title>City Data</title>
+</head>
+
+<body>
+
+    <!-- ----------------------------------------------------------------------------
+    ヘッダー（ナビゲーションバー）
+    ----------------------------------------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./public/img/logo/dashboard.svg" alt="Dashboard Logo" class="navbar-log-size">
+            </a>
+    
+            <!-- Navbar toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cities.html">Cities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./indicators.html">Indicators</a>
+                    </li>
+                </ul>
+
+                <!-- Logout -->
+                <form action="../logout.php" method="post" class="d-inline ms-2">
+                    <button type="submit" class="btn btn-outline-danger btn-sm">Logout</button>
+                </form>
+    
+                <!-- Language Selector (Right-aligned) -->
+                <div class="d-flex align-items-center">
+                    <select class="form-select form-select-sm mx-2" aria-label="Language selection" id="languageSelector">
+                        <option value="en" selected>English</option>
+                        <option value="ja">日本語</option>
+                    </select>
+                </div>
+            </div>
+            
+        </div>
+    </nav>                 
+
+    <!-- ----------------------------------------------------------------------------
+    メインコンテンツ 
+    ----------------------------------------------------------------------------- -->
+    <main class="container-fluid pt-5">
+        <div class="row">
+
+            <!-- サイドバー（mobileモード） -->
+            <div id="sidebar-mobile" class="d-lg-none col-12 bg-dark text-white p-3">
+                <h1 id="city-name-mobile" class="display-6"></h1>
+                    <form id="select-city">
+                        <div class="row m-2">
+                            <select id="area-mobile" name="city" class="form-select">
+                                <option value="">--- Select City ---</option>
+                                <option value="lon">LONDON</option>
+                                <option value="nyc">NEW YORK</option>
+                                <option value="tyo">TOKYO</option>
+                                <option value="par">PARIS</option>
+                                <option value="sin">SINGAPORE</option>
+                                <option value="sel">SEOUL</option>
+                            </select>
+                            <input class="btn btn-primary mt-3" type="submit" value="Show City Data">
+                        </div>
+                    </form>
+                </nav>
+            </div>
+
+            <!-- サイドバー（mobileモード） -->
+            <div id="sidebar-mobile" class="d-lg-none col-12 bg-light p-3">
+                <nav>
+                    <select class="form-select" id="mobile-nav">
+                        <option value="#poplation">Population</option>
+                        <option value="#infrastructure">Infrastructure</option>
+                        <option value="#city">City</option>
+                    </select>
+                </nav>
+            </div>
+            
+            <script>
+                document.getElementById("mobile-nav").addEventListener("change", function() {
+                    window.location.hash = this.value;
+                });
+            </script>
+            <!-- End of サイドバー（mobileモード） -->
+
+            <!-- サイドバー（PCモード） -->
+            <div id="sidebar-pc" class="d-none d-lg-block col-lg-2 bg-dark text-white p-3 min-vh-100">
+
+                <h1 id="city-name-pc" class="display-6 fw-bold">City Name</h1>
+                <form id="select-city">
+                    <select id="area-pc" name="city" class="form-select w-100">
+                        <option value="">--- Select City ---</option>
+                        <option value="lon">LONDON</option>
+                        <option value="nyc">NEW YORK</option>
+                        <option value="tyo">TOKYO</option>
+                        <option value="par">PARIS</option>
+                        <option value="sin">SINGAPORE</option>
+                        <option value="sel">SEOUL</option>
+                    </select>
+                    <input id="select-city-btn" class="btn btn-primary mt-3 w-100" type="submit" value="Show City Data">
+                </form>
+                
+                <hr style="background-color: #ffffff;">
+                <div id="layerSwitcher" class="mb-3">
+                <fieldset>
+                    <legend class="fs-6 mb-2">CITY DATA</legend>
+                    <div class="d-flex justify-content-start mt-2">
+                        <a href="#city-flag" class="btn btn-outline-primary btn-sm w-100">Top</a>
+                    </div>
+                    <div class="d-flex justify-content-start mt-2">
+                        <a href="#boundary" class="btn btn-outline-primary btn-sm w-100">Boundary</a>
+                    </div>
+                    <div class="d-flex justify-content-start mt-2">
+                        <a href="#population" class="btn btn-outline-primary btn-sm w-100">Population</a>
+                    </div>
+                    <div class="mt-2">
+                        <button class="btn btn-outline-primary btn-sm w-100 position-relative" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#infrastructureSubmenu" 
+                                aria-expanded="false" 
+                                aria-controls="infrastructureSubmenu">
+                            Infrastructure
+                            <span class="position-absolute end-0 me-2">▼</span>
+                        </button>
+                        <div class="collapse mt-1" id="infrastructureSubmenu">
+                            <div class="ps-3">
+                                <a href="#flight_network" class="btn btn-outline-secondary btn-sm w-100 mb-1">Flight Network</a>
+                                <a href="#railway" class="btn btn-outline-secondary btn-sm w-100">Railway</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start mt-2">
+                        <a href="#city" class="btn btn-outline-primary btn-sm w-100">City</a>
+                    </div>
+                </fieldset>
+                </div>
+            </div>
+            <!-- End of サイドバー（PCモード） -->
+
+            <!-- 指標データ -->
+            <div class="col-lg-10 col-12 pe-sm-5 bg-light">
+                <!-- 国旗と都市名 -->
+                <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-sm-6 p-3 bg-light">
+                            <div class="d-flex align-items-center">
+                                <span id="city-flag" class="flag-icon flag-icon-jp flag-large bordered-flag"></span>
+                                <p id="city-name" class="display-6 mb-0 ms-3 fw-bold">City Name</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ★★★ 指標：区域 ★★★ -->
+                <!-- ローディング・スピナー付き -->
+                <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
+                    <h1 id="boundary" class="display-6 fw-bold">Boundary</h1>
+                    <div class="row">
+                        <div style="position:relative; padding: 0;">
+                            <div id="boundary_map" class="col-sm-12 p-3 bg-light border" style="height: 500px;"></div>
+                            <!-- 凡例 -->
+                            <div id="boundary-legend" class="map-legend">
+                                <span><span class="legend-color" style="background: red;"></span> City</span>
+                                <span><span class="legend-color" style="background: blue;"></span> Metropolitan</span>
+                                <span><span class="legend-color" style="background: green;"></span> Country</span>
+                            </div>
+                            <!-- 凡例ここまで -->
+                            <!-- スピナー -->
+                            <div class="map-loading-spinner" id="spinner-boundary"
+                            style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1000;">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <!-- スピナーここまで -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ★★★ 指標：人口 ★★★ -->
+            <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
+                <h1 id="population" class="display-6 fw-bold">Population</h1>
+                    <div class="row">
+                        <div style="position:relative; padding: 0;">
+                        <div id="population_country_map" class="col-sm-12 p-3 bg-light border" style="height: 500px;"></div>
+                        <!-- Population Density Legend -->
+                        <div id="population-density-legend" class="map-legend" aria-label="Population Density Legend">
+                            <span><span class="legend-color" style="background: #3288bd;"></span> 0 未満</span>
+                            <span><span class="legend-color" style="background: #83e19d;"></span> 0 - 4,999</span>
+                            <span><span class="legend-color" style="background: #fee08b;"></span> 5,000 - 9,999</span>
+                            <span><span class="legend-color" style="background: #f9993b;"></span> 10,000 - 14,999</span>
+                            <span><span class="legend-color" style="background: #ef5305;"></span> 15,000 - 19,999</span>
+                            <span><span class="legend-color" style="background: #d53e4f;"></span> 20,000 - 24,999</span>
+                            <span><span class="legend-color" style="background: #c62240;"></span> 25,000 - 29,999</span>
+                            <span><span class="legend-color" style="background: #b31535;"></span> 30,000 - 34,999</span>
+                            <span><span class="legend-color" style="background: #9f0729;"></span> 35,000 - 39,999</span>
+                            <span><span class="legend-color" style="background: #8b001d;"></span> 40,000 - 44,999</span>
+                            <span><span class="legend-color" style="background: #7a0014;"></span> 45,000 以上</span>
+                        </div>
+                        <!-- Population Density Legend End -->
+                        <!-- 凡例ここまで -->
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-sm-4 p-3 bg-light border" style="height: 350px;">
+                            <!-- ★★★ 国 人口変遷グラフ ★★★ -->
+                            <canvas id="country-population-timeseries"></canvas>
+                            <small class="mb-5">Source: XXXXX</small>
+                        </div>
+                        <div class="col-sm-4 p-3 bg-light border" style="height: 350px;">
+                            <!-- ★★★ 都市圏 人口変遷グラフ ★★★ -->
+                            <canvas id="metropolitan-population-timeseries"></canvas>
+                            <small class="mb-5">Source: XXXXX</small>
+                        </div>
+                        <div class="col-sm-4 p-3 bg-light border" style="height: 350px;">
+                            <!-- ★★★ 都市 人口変遷グラフ ★★★ -->
+                            <canvas id="city-population-timeseries"></canvas>
+                            <small class="mb-5">Source: XXXXX</small>
+                        </div>
+                    </div>
+                </section>
+                <!-- ★★★ 指標： ★★★ -->
+                <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
+                    <h1 id="infrastructure" class="display-6 fw-bold">Infrastructure</h1>
+                    <div class="row">
+                        <h3 id="flight_network" class="display-6">| Flight Network</h3>
+                        <div id="flight_network_map" class="col-sm-12 p-3 bg-light border" style="height: 350px;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 p-3 bg-light border" style="height: 350px;">グラフ</div>
+                        <div class="col-sm-6 p-3 bg-light border" style="height: 350px;">グラフ</div>
+                    </div> 
+                    <div class="row">
+                        <h3 id="railway" class="display-6">| Railway</h3>
+                        <div id="railway_map" class="col-sm-12 p-3 bg-light border" style="height: 350px;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 p-3 bg-light border" style="height: 350px;">グラフ</div>
+                        <div class="col-sm-6 p-3 bg-light border" style="height: 350px;">グラフ</div>
+                    </div> 
+                </section>
+                <!-- ★★★ 指標： ★★★ -->
+                <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
+                    <h1 id="city" class="display-6 fw-bold">City</h1>
+                    <div class="row">
+                        <div class="col-sm-8 p-3 bg-light border" style="height: 350px;">グラフ</div>
+                        <div class="col-sm-4 p-3 bg-light border" style="height: 350px;">グラフ</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 p-2 bg-light border" style="height: 350px;">グラフ</div>
+                    </div>           
+                    </section>
+                <!-- Bottom margin -->
+                <div class="col-12" style="height: 50px;"></div>
+            </div>
+            <!-- End of 指標データ -->
+            
+        </div>
+    </main>
+
+    <!-- ----------------------------------------------------------------------------
+    フッター
+    ----------------------------------------------------------------------------- -->
+    <footer class="bg-dark text-light py-2 fixed-bottom">
+    <div class="text-center">
+        <small>
+        Copyright &copy; <span id="year"></span> Mori Memorial Foundation, All rights reserved.
+        </small>
+    </div>
+    </footer>
+
+    <script>
+        // Automatically insert the current year
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- ★★★ Mapbox ★★★ -->
+    <script src="./scripts/js/city-data/map/city-data_mapbox.js"></script>
+    <!-- ★★★ 国：人口 ★★★ -->
+    <script src="./scripts/js/city-data/graph/country/country-population-timeseries.js" defer></script>
+    <!-- ★★★ 都市圏：人口 ★★★ -->
+    <script src="./scripts/js/city-data/graph/metropolitan/metropolitan-population-timeseries.js" defer></script>
+    <!-- ★★★ 都市：人口 ★★★ -->
+    <script src="./scripts/js/city-data/graph/city/city-population-timeseries.js" defer></script>
+
+</body>
+</html>

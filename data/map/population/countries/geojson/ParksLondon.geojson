@@ -1,0 +1,3177 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [
+    {
+      "type" : "Feature",
+      "id" : 1,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.13353699999993296,
+          51.590377800000056
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 1,
+        "Name" : "Alexandra Park",
+        "Size_ha_" : 80,
+        "Type" : "Public Park\n Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, Skate park, F&B, Performance area, Sport courts, Water activity",
+        "Address" : "Alexandra Palace Way, London N22 7AY, United Kingdom",
+        "Latitude" : 51.590377799999999,
+        "Longitude" : -0.13353699999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/alexandra-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 2,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.13262229999992314,
+          51.620577300000036
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 2,
+        "Name" : "Arnos Park",
+        "Size_ha_" : 18,
+        "Type" : "Public Park\n Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, Sport courts",
+        "Address" : "120 Morton Way, Arnos Grove, London N14 7AL, United Kingdom",
+        "Latitude" : 51.620577300000001,
+        "Longitude" : -0.1326223,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/arnos-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 3,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.088814000000070337,
+          51.543508600000052
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 3,
+        "Name" : "Barking Park",
+        "Size_ha_" : 30,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, Skate park, F&B, Sport courts, Water activity",
+        "Address" : "Barking IG11 8SS, United Kingdom",
+        "Latitude" : 51.543508600000003,
+        "Longitude" : 0.088814000000000004,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/barking-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 4,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.42312919999994847,
+          51.516854400000057
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 4,
+        "Name" : "Barra Hall Park",
+        "Size_ha_" : 11,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "36 Freemans Ln, Hayes UB3 2NH, United Kingdom",
+        "Latitude" : 51.5168544,
+        "Longitude" : -0.42312919999999998,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/barra-hall-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 5,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.15570229999991625,
+          51.480181500000072
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 5,
+        "Name" : "Battersea Park",
+        "Size_ha_" : 81,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, F&B, Sport courts, Water activity",
+        "Address" : "London SW11 4NJ, United Kingdom",
+        "Latitude" : 51.4801815,
+        "Longitude" : -0.15570229999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/battersea-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 6,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.017572499999914726,
+          51.422525300000075
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 6,
+        "Name" : "Beckenham Place Park",
+        "Size_ha_" : 96,
+        "Type" : "Public Park",
+        "Entry" : null,
+        "Facilities" : "Children's play area, F&B, Sport courts, Water activity",
+        "Address" : "Beckenham Hill Rd, Beckenham BR3 5BS, United Kingdom",
+        "Latitude" : 51.422525299999997,
+        "Longitude" : -0.017572500000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/beckenham-place-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 7,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.14095399999990832,
+          51.372368300000062
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 7,
+        "Name" : "Beddington Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Church Rd, Wallington SM6 7NN, United Kingdom",
+        "Latitude" : 51.372368299999998,
+        "Longitude" : -0.140954,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/beddington-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 8,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.45264909999991687,
+          51.441589600000043
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 8,
+        "Name" : "Bedfont Lakes Country Park",
+        "Size_ha_" : 72,
+        "Type" : "Country Park",
+        "Entry" : "Free",
+        "Facilities" : null,
+        "Address" : "Clockhouse Ln, Feltham TW14 8QA, United Kingdom",
+        "Latitude" : 51.4415896,
+        "Longitude" : -0.45264910000000003,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/bedfont-lakes-country-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 9,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.087769299999933992,
+          51.444431500000064
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 9,
+        "Name" : "Belair Park",
+        "Size_ha_" : 10,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, Skate park, F&B, Sport courts",
+        "Address" : "Gallery Rd, London SE21, United Kingdom",
+        "Latitude" : 51.4444315,
+        "Longitude" : -0.087769299999999995,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/belair-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 10,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.0095404000000485212,
+          51.472422400000085
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 10,
+        "Name" : "Blackheath",
+        "Size_ha_" : 85,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Prince Charles Rd, Blackheath, London SE3 7BT, United Kingdom",
+        "Latitude" : 51.472422399999999,
+        "Longitude" : 0.0095403999999999992,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/blackheath.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 11,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.31749669999993557,
+          51.492021700000066
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 11,
+        "Name" : "Boston Manor Park",
+        "Size_ha_" : 11,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Boston Manor Rd, Brentford TW8 9JX, United Kingdom",
+        "Latitude" : 51.492021700000002,
+        "Longitude" : -0.31749670000000002,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/boston-manor-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 12,
+      "geometry" : null,
+      "properties" : {
+        "OBJECTID" : 12,
+        "Shape" : null,
+        "Name" : "Brent Reservoir",
+        "Size_ha_" : 68,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : null,
+        "Latitude" : null,
+        "Longitude" : null,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/brent-reservoir.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 13,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.27029499999991913,
+          51.549132700000087
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 13,
+        "Name" : "Brent River Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "174 Vivian Ave, Wembley HA9 6RP, United Kingdom",
+        "Latitude" : 51.549132700000001,
+        "Longitude" : -0.27029500000000001,
+        "City" : null,
+        "URL_name___size_" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 14,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.10561819999992395,
+          51.446601400000077
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 14,
+        "Name" : "Brockwell Park",
+        "Size_ha_" : 50,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, Performance area, Sport courts",
+        "Address" : "Brockwell Park, Brockwell Park Gardens, London SE24 9BJ, United Kingdom",
+        "Latitude" : 51.446601399999999,
+        "Longitude" : -0.1056182,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/brockwell-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 15,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.11442039999991493,
+          51.619478900000047
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 15,
+        "Name" : "Broomfield Park",
+        "Size_ha_" : 133,
+        "Type" : "Public Park, Garden Feature Remnants",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, Skate park, F&B, Sport courts, Water activity",
+        "Address" : "Aldermans Hill, London N13, United Kingdom",
+        "Latitude" : 51.619478899999997,
+        "Longitude" : -0.11442040000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/broomfield-house.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 16,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.081666399999960504,
+          51.485395100000062
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 16,
+        "Name" : "Burgess Park",
+        "Size_ha_" : 56,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, Skate park, F&B, Sport courts, Water activity",
+        "Address" : "Albany Rd, London SE5 0AL, United Kingdom",
+        "Latitude" : 51.485395099999998,
+        "Longitude" : -0.0816664,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/burgess-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 17,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.22935439999992013,
+          51.424320700000067
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 17,
+        "Name" : "Cannizaro Park",
+        "Size_ha_" : 14,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "F&B, Performance area",
+        "Address" : "London SW19 4UE, United Kingdom",
+        "Latitude" : 51.424320700000003,
+        "Longitude" : -0.22935440000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/cannizaro-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 18,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.36983349999991333,
+          51.421675300000061
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 18,
+        "Name" : "Carlisle Park",
+        "Size_ha_" : 54,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, Sport courts",
+        "Address" : "Wensleydale Rd, Hampton TW12 2LY, United Kingdom",
+        "Latitude" : 51.421675299999997,
+        "Longitude" : -0.36983349999999998,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/carlisle-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 19,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.1605994999999325,
+          51.363361500000053
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 19,
+        "Name" : "Carshalton Park",
+        "Size_ha_" : 9,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, Sport courts",
+        "Address" : "Carshalton SM5 3DD, United Kingdom",
+        "Latitude" : 51.363361500000003,
+        "Longitude" : -0.16059950000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/carshalton-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 20,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.047551900000087244,
+          51.482009800000071
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 20,
+        "Name" : "Charlton Park, Greenwich",
+        "Size_ha_" : null,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, Skate park, F&B, Sport courts",
+        "Address" : "21 Cemetery Ln, London SE7 8DZ, United Kingdom",
+        "Latitude" : 51.4820098,
+        "Longitude" : 0.047551900000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/charlton-park-greenwich.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 21,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.16312569999990956,
+          51.484633900000063
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 21,
+        "Name" : "Chelsea Physic Garden",
+        "Size_ha_" : 9,
+        "Type" : "Botanical park",
+        "Entry" : "Entry fee",
+        "Facilities" : "F&B",
+        "Address" : "66 Royal Hospital Rd, London SW3 4HS, United Kingdom",
+        "Latitude" : 51.484633899999999,
+        "Longitude" : -0.16312570000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/chelsea-physic-garden.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 22,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.030048800000088249,
+          51.428968800000064
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 22,
+        "Name" : "Chinbrook Meadows",
+        "Size_ha_" : 19,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, F&B, Sport courts, Water activity",
+        "Address" : "Mayeswood Rd, London SE12 9RP, United Kingdom",
+        "Latitude" : 51.4289688,
+        "Longitude" : 0.030048800000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/chinbrook-meadows.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 23,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.2580232999999339,
+          51.484881700000074
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 23,
+        "Name" : "Chiswick House",
+        "Size_ha_" : 26,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "F&B",
+        "Address" : "Chiswick House, Chiswick, London W4 2QN, United Kingdom",
+        "Latitude" : 51.484881700000003,
+        "Longitude" : -0.25802330000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/chiswick-house.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 24,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.14930709999993041,
+          51.458925200000067
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 24,
+        "Name" : "Clapham Common",
+        "Size_ha_" : 87,
+        "Type" : "Public Open Land",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, Skate park, F&B, Performance area, Sport courts, Water activity",
+        "Address" : "Clapham Common, Windmill Dr, London SW4 9DE, United Kingdom",
+        "Latitude" : 51.458925200000003,
+        "Longitude" : -0.1493071,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/clapham-common.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 25,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.10337889999993877,
+          51.590498100000048
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 25,
+        "Name" : "Clissold Park",
+        "Size_ha_" : 22,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, Skate park, F&B, Sport courts, Water activity",
+        "Address" : "Green Lanes, London N16 9HJ, United Kingdom",
+        "Latitude" : 51.590498099999998,
+        "Longitude" : -0.1033789,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/clissold-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 26,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.11969049999993331,
+          51.524803400000053
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 26,
+        "Name" : "Coram's Fields",
+        "Size_ha_" : null,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Sport courts",
+        "Address" : "93 Guilford St, London WC1N 1DN, United Kingdom",
+        "Latitude" : 51.524803400000003,
+        "Longitude" : -0.11969050000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/corams-fields.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 27,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.37274929999995265,
+          51.444684500000051
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 27,
+        "Name" : "Crane Park",
+        "Size_ha_" : 60,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area",
+        "Address" : "Ellerman Ave, London TW2 6AA, United Kingdom",
+        "Latitude" : 51.444684500000001,
+        "Longitude" : -0.37274930000000001,
+        "City" : null,
+        "URL_name___size_" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 28,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.39119569999991199,
+          51.485452900000041
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 28,
+        "Name" : "Cranford Park",
+        "Size_ha_" : 59,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : null,
+        "Address" : "London TW5 9RZ, United Kingdom",
+        "Latitude" : 51.485452899999999,
+        "Longitude" : -0.39119569999999998,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/cranford-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 29,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.066259199999933571,
+          51.416898500000059
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 29,
+        "Name" : "Crystal Palace Park",
+        "Size_ha_" : 80,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "Children's play area, Skate park, F&B, Sport courts, Water activity",
+        "Address" : "Thicket Rd, London SE19 2GA, United Kingdom",
+        "Latitude" : 51.416898500000002,
+        "Longitude" : -0.066259200000000004,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/crystal-palace-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 30,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.12122350000004189,
+          51.44988150000006
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 30,
+        "Name" : "Danson Park",
+        "Size_ha_" : 78,
+        "Type" : "Public Park",
+        "Entry" : "Free",
+        "Facilities" : "F&B, Sport courts, Water activity",
+        "Address" : "51 Danson Rd, Bexleyheath DA15 9PW, United Kingdom",
+        "Latitude" : 51.449881499999996,
+        "Longitude" : 0.1212235,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/danson-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 31,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.081954099999961727,
+          51.437655300000074
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 31,
+        "Name" : "Dulwich Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "College Rd, London SE21, United Kingdom",
+        "Latitude" : 51.437655300000003,
+        "Longitude" : -0.081954100000000002,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/dulwich-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 32,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.11371809999991456,
+          51.365314500000068
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 32,
+        "Name" : "Duppas Hill Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Croydon CR0 4GB, United Kingdom",
+        "Latitude" : 51.365314499999997,
+        "Longitude" : -0.1137181,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/duppas-hill.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 33,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.29155879999996159,
+          51.509923900000047
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 33,
+        "Name" : "Ealing Common",
+        "Size_ha_" : 116,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "1 Leopold Rd, London W5 3PB, United Kingdom",
+        "Latitude" : 51.509923899999997,
+        "Longitude" : -0.29155880000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/ealing-common.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 34,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.27299589999995533,
+          51.458055700000045
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 34,
+        "Name" : "East Sheen Common",
+        "Size_ha_" : 185,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Fife Rd, London SW14 7EL, United Kingdom",
+        "Latitude" : 51.458055700000003,
+        "Longitude" : -0.27299590000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/east-sheen-common.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 35,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.16173350000008213,
+          51.552950500000065
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 35,
+        "Name" : "Eastbrookend Country Park",
+        "Size_ha_" : 84,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "15 Greenwood Ave, Dagenham RM7 0NT, United Kingdom",
+        "Latitude" : 51.552950500000001,
+        "Longitude" : 0.1617335,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/eastbrookend-country-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 36,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.080295299999932013,
+          51.650716200000033
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 36,
+        "Name" : "Enfield Town Park",
+        "Size_ha_" : 9,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Cecil Rd, London EN2 6LE, United Kingdom",
+        "Latitude" : 51.650716199999998,
+        "Longitude" : -0.0802953,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/enfield-town-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 37,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.096008700000083991,
+          51.596736200000066
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 37,
+        "Name" : "Fairlop Waters Country Park",
+        "Size_ha_" : 136,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Forest Rd, Ilford IG6 3HN, United Kingdom",
+        "Latitude" : 51.596736200000002,
+        "Longitude" : 0.096008700000000002,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/fairlop-waters-country-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 38,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.10306249999990769,
+          51.57448590000007
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 38,
+        "Name" : "Finsbury Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Endymion Rd, Finsbury Park, London N4 1EE, United Kingdom",
+        "Latitude" : 51.574485899999999,
+        "Longitude" : -0.1030625,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/finsbury-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 39,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.13778910000007727,
+          51.428704200000084
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 39,
+        "Name" : "Foots Cray Meadows",
+        "Size_ha_" : 97,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "N Cray Rd, Sidcup DA14 5AG, United Kingdom",
+        "Latitude" : 51.428704199999999,
+        "Longitude" : 0.1377891,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/foots-cray-meadows.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 40,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.002600299999926392,
+          51.430970400000035
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 40,
+        "Name" : "Forster Memorial Park",
+        "Size_ha_" : 17,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Whitefoot Ln, London SE6 1UA, United Kingdom",
+        "Latitude" : 51.4309704,
+        "Longitude" : -0.0026002999999999998,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/forster-memorial-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 41,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.24026689999993778,
+          51.555959700000074
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 41,
+        "Name" : "Gladstone Park",
+        "Size_ha_" : 35,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "52 Mulgrave Rd, London NW10 1BT, United Kingdom",
+        "Latitude" : 51.555959700000002,
+        "Longitude" : -0.24026690000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/gladstone-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 42,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.11379100000004883,
+          51.364268200000083
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 42,
+        "Name" : "Goddington Park",
+        "Size_ha_" : 64,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Goddington Ln, Orpington BR6 9DH, United Kingdom",
+        "Latitude" : 51.364268199999998,
+        "Longitude" : 0.113791,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/goddington.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 43,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.1625051999999414,
+          51.367959400000075
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 43,
+        "Name" : "The Grove Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "121 Mill Ln, Carshalton SM5 2AN, United Kingdom",
+        "Latitude" : 51.367959399999997,
+        "Longitude" : -0.16250519999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/grove-park-sutton.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 44,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.12074719999992567,
+          51.633053800000084
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 44,
+        "Name" : "Grovelands Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "44 Queen Elizabeth's Dr, London N14 6RD, United Kingdom",
+        "Latitude" : 51.633053799999999,
+        "Longitude" : -0.1207472,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/grovelands-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 45,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.29072369999994407,
+          51.497403000000077
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 45,
+        "Name" : "Gunnersbury Park",
+        "Size_ha_" : 30,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Gunnersbury Park, Popes Ln, London W3 8LQ, United Kingdom",
+        "Latitude" : 51.497402999999998,
+        "Longitude" : -0.29072369999999997,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/gunnersbury-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 46,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.060123699999905966,
+          51.552427700000067
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 46,
+        "Name" : "Hackney Downs Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Downs Park Rd, Lower Clapton, London E5 8NP, United Kingdom",
+        "Latitude" : 51.552427700000003,
+        "Longitude" : -0.060123700000000002,
+        "City" : null,
+        "URL_name___size_" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 47,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.033209499999941272,
+          51.554206300000033
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 47,
+        "Name" : "Hackney Marshes",
+        "Size_ha_" : 136,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "London E9 5PY, United Kingdom",
+        "Latitude" : 51.554206299999997,
+        "Longitude" : -0.033209500000000003,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/hackney-marshes.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 48,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.16051630000004025,
+          51.448836800000038
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 48,
+        "Name" : "Hall Place & Gardens",
+        "Size_ha_" : 65,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Bourne Rd, Dartford, Bexley DA5 1PQ, United Kingdom",
+        "Latitude" : 51.448836800000002,
+        "Longitude" : 0.1605163,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/hall-place.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 49,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.2273209999999608,
+          51.510655800000052
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 49,
+        "Name" : "Hammersmith Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "London W12 7GH, United Kingdom",
+        "Latitude" : 51.510655800000002,
+        "Longitude" : -0.227321,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/hammersmith-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 50,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.34263189999995802,
+          51.396768400000042
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 50,
+        "Name" : "Hampton Court Palace",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Hampton Ct Way, Molesey, East Molesey KT8 9AU, United Kingdom",
+        "Latitude" : 51.396768399999999,
+        "Longitude" : -0.34263189999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/hampton-court-palace.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 51,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.33222739999990836,
+          51.392900000000054
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 51,
+        "Name" : "Hampton Court Park / Home Park",
+        "Size_ha_" : 88,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "5 Summer Rd, Molesey, East Molesey, Thames Ditton, United Kingdom",
+        "Latitude" : 51.392899999999997,
+        "Longitude" : -0.33222740000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/hampton-court-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 52,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.39874179999992521,
+          51.439904800000079
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 52,
+        "Name" : "Hanworth Park (London Air Park)",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Feltham TW13 7EY, United Kingdom",
+        "Latitude" : 51.439904800000001,
+        "Longitude" : -0.39874179999999998,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/london-air-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 53,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.17704060000005484,
+          51.61382610000004
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 53,
+        "Name" : "Havering Country Park",
+        "Size_ha_" : 247,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "2 Pinewood Rd, Havering-atte-Bower, Romford RM4 1PH, United Kingdom",
+        "Latitude" : 51.613826099999997,
+        "Longitude" : 0.17704059999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/havering-country-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 54,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.025447000000042408,
+          51.367586000000074
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 54,
+        "Name" : "Hayes Common",
+        "Size_ha_" : 2,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Croydon Rd, Bromley BR2 7AU, United Kingdom",
+        "Latitude" : 51.367586000000003,
+        "Longitude" : 0.025447000000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/hayes-common.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 55,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.073480100000040238,
+          51.352854200000081
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 55,
+        "Name" : "High Elms Country Park",
+        "Size_ha_" : 69,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Shire Ln, Orpington BR6 7JH, United Kingdom",
+        "Latitude" : 51.352854200000003,
+        "Longitude" : 0.073480100000000007,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/high-elms-country-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 56,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.1047348999999258,
+          51.548055700000077
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 56,
+        "Name" : "Highbury Fields",
+        "Size_ha_" : 11,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Highbury Cres, London N5 1AR, United Kingdom",
+        "Latitude" : 51.548055699999999,
+        "Longitude" : -0.10473490000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/highbury-fields.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 57,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.45603019999992966,
+          51.547142300000075
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 57,
+        "Name" : "Hillingdon Court",
+        "Size_ha_" : 7870,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Uxbridge UB10 9NT, United Kingdom",
+        "Latitude" : 51.547142299999997,
+        "Longitude" : -0.4560302,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/hillingdon-court.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 58,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.2027927999999406,
+          51.500683800000047
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 58,
+        "Name" : "Holland Park",
+        "Size_ha_" : 22,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Ilchester Pl, London W8 6LU, United Kingdom",
+        "Latitude" : 51.500683799999997,
+        "Longitude" : -0.2027928,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/holland-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 59,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.026719400000047244,
+          51.44180410000007
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 59,
+        "Name" : "Horn Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "83 Winn Rd, London SE12 9EY, United Kingdom",
+        "Latitude" : 51.441804099999999,
+        "Longitude" : 0.026719400000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/horn-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 60,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.38362659999995685,
+          51.460082600000078
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 60,
+        "Name" : "Hounslow Heath",
+        "Size_ha_" : 82,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Hounslow TW4 5EB, United Kingdom",
+        "Latitude" : 51.4600826,
+        "Longitude" : -0.38362659999999998,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/hounslow-heath.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 61,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.10988779999991038,
+          51.484049700000071
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 61,
+        "Name" : "Kennington Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Kennington Park Rd, London SE11 4BE, United Kingdom",
+        "Latitude" : 51.4840497,
+        "Longitude" : -0.10988779999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/kennington-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 62,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.16722899999990659,
+          51.573054700000057
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 62,
+        "Name" : "Kenwood House",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Hampstead Ln, London NW3 7JR, United Kingdom",
+        "Latitude" : 51.5730547,
+        "Longitude" : -0.16722899999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/kenwood-house.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 63,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.036792100000070604,
+          51.356681600000059
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 63,
+        "Name" : "Keston Common",
+        "Size_ha_" : 56,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Westerham Rd, Bromley, Keston BR2, United Kingdom",
+        "Latitude" : 51.356681600000002,
+        "Longitude" : 0.036792100000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/keston-common.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 64,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.291176099999916,
+          51.485272800000075
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 64,
+        "Name" : "Kew Gardens",
+        "Size_ha_" : 121,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Kew, Richmond, London, TW9 3AE, United Kingdom",
+        "Latitude" : 51.485272799999997,
+        "Longitude" : -0.29117609999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/kew-gardens.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 65,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.19356299999992643,
+          51.45285860000007
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 65,
+        "Name" : "King George's Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Mapleton Rd, London SW18 2GJ, United Kingdom",
+        "Latitude" : 51.452858599999999,
+        "Longitude" : -0.19356300000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/king-georges-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 66,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.21722200000004932,
+          51.565556000000072
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 66,
+        "Name" : "Langtons Gardens",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Langtons, Hornchurch RM11 1XH, United Kingdom",
+        "Latitude" : 51.565556000000001,
+        "Longitude" : 0.217222,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/langtons.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 67,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.061801999999943291,
+          51.541753700000072
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 67,
+        "Name" : "London Fields",
+        "Size_ha_" : 12,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "London Fields West Side, London E8 3EU, United Kingdom",
+        "Latitude" : 51.541753700000001,
+        "Longitude" : -0.061802000000000003,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/london-fields.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 68,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.31185649999991938,
+          51.45491190000007
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 68,
+        "Name" : "Marble Hill Park",
+        "Size_ha_" : 163,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Richmond Rd, Twickenham TW1 2NL, United Kingdom",
+        "Latitude" : 51.454911899999999,
+        "Longitude" : -0.31185649999999998,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/marble-hill-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 69,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.11295940000007931,
+          51.544722700000079
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 69,
+        "Name" : "Mayesbrook Park",
+        "Size_ha_" : 43,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "180 Lodge Ave, Dagenham RM8 2JR, United Kingdom",
+        "Latitude" : 51.544722700000001,
+        "Longitude" : 0.1129594,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/mayesbrook-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 70,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.051588399999957346,
+          51.429881800000032
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 70,
+        "Name" : "Mayow Park",
+        "Size_ha_" : 7,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "London SE26 4SS, United Kingdom",
+        "Latitude" : 51.429881799999997,
+        "Longitude" : -0.0515884,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/mayow-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 71,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.037518099999942933,
+          51.527141700000072
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 71,
+        "Name" : "Mile End Park",
+        "Size_ha_" : 32,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Clinton Rd, London E3 4QY, United Kingdom",
+        "Latitude" : 51.527141700000001,
+        "Longitude" : -0.037518099999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/mile-end-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 72,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.19017559999991818,
+          51.401654700000051
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 72,
+        "Name" : "Morden Hall Park",
+        "Size_ha_" : 51,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Morden Hall Rd, London, Morden SM4 5JD, United Kingdom",
+        "Latitude" : 51.401654700000002,
+        "Longitude" : -0.1901756,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/morden-hall-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 73,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.21696299999990742,
+          51.390498500000035
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 73,
+        "Name" : "Morden Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Lower Morden Ln, Morden SM4, UK, United Kingdom",
+        "Latitude" : 51.3904985,
+        "Longitude" : -0.21696299999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/morden-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 74,
+      "geometry" : null,
+      "properties" : {
+        "OBJECTID" : 74,
+        "Shape" : null,
+        "Name" : "Motspur Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : null,
+        "Latitude" : null,
+        "Longitude" : null,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/motspur-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 75,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.0081486999999356158,
+          51.448380700000087
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 75,
+        "Name" : "Mountsfield Park",
+        "Size_ha_" : 13,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "The Lodge, Stainton Rd, London SE6 1AN, United Kingdom",
+        "Latitude" : 51.448380700000001,
+        "Longitude" : -0.0081487,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/mountsfield-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 76,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.21811879999995654,
+          51.357485600000075
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 76,
+        "Name" : "Nonsuch Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "23 Ewell Rd, Sutton SM3 8AB, United Kingdom",
+        "Latitude" : 51.357485599999997,
+        "Longitude" : -0.2181188,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/nonsuch-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 77,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.090640799999960109,
+          51.425398800000039
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 77,
+        "Name" : "Norwood Park",
+        "Size_ha_" : 3459,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Salter's Hill, Norwood, London SE19 1EA, United Kingdom",
+        "Latitude" : 51.425398800000004,
+        "Longitude" : -0.090640799999999994,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/norwood-park-west-norwood.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 78,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.19286469999991596,
+          51.327111000000059
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 78,
+        "Name" : "Oaks Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "A2022 Croydon Ln S, Banstead SM7 3BA, United Kingdom",
+        "Latitude" : 51.327111000000002,
+        "Longitude" : -0.1928647,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/oaks-park-carshalton.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 79,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.29655139999994162,
+          51.467872600000078
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 79,
+        "Name" : "Old Deer Park",
+        "Size_ha_" : 147,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "187 Kew Rd, Richmond TW9 2AZ, United Kingdom",
+        "Latitude" : 51.4678726,
+        "Longitude" : -0.29655140000000002,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/old-deer-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 80,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.35085759999992661,
+          51.483821200000079
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 80,
+        "Name" : "Osterley Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Jersey Rd, Isleworth TW7 4RB, United Kingdom",
+        "Latitude" : 51.483821200000001,
+        "Longitude" : -0.35085759999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/osterley-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 81,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.068268100000068443,
+          51.467518400000074
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 81,
+        "Name" : "Oxleas Wood",
+        "Size_ha_" : 72,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Crown Woods Ln, London SE18 3JA, United Kingdom",
+        "Latitude" : 51.467518400000003,
+        "Longitude" : 0.068268099999999998,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/eltham-common.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 82,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.18437449999993305,
+          51.528569800000071
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 82,
+        "Name" : "Paddington Recreation Ground",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Randolph Ave, London W9 1PD, United Kingdom",
+        "Latitude" : 51.5285698,
+        "Longitude" : -0.1843745,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/paddington-recreation-ground.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 83,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.13271870000005492,
+          51.541020500000059
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 83,
+        "Name" : "Parsloes Park",
+        "Size_ha_" : 58,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "333 Ivyhouse Rd, Dagenham RM9 5SA, United Kingdom",
+        "Latitude" : 51.541020500000002,
+        "Longitude" : 0.1327187,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/parsloes-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 84,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.063986199999931159,
+          51.459719600000085
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 84,
+        "Name" : "Peckham Rye Park and Common",
+        "Size_ha_" : 133,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "34 Straker's Rd, London SE15 3UA, United Kingdom",
+        "Latitude" : 51.4597196,
+        "Longitude" : -0.063986199999999993,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/peckham-rye.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 85,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.29190869999990809,
+          51.441318300000034
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 85,
+        "Name" : "Pesthouse Common, Richmond",
+        "Size_ha_" : 1,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Queen's Road, Richmond, United Kingdom",
+        "Latitude" : 51.441318299999999,
+        "Longitude" : -0.29190870000000002,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/pesthouse-common-richmond.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 86,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.16216419999994969,
+          51.542294900000059
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 86,
+        "Name" : "Primrose Hill",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Primrose Hill Rd, London NW1 4NR, United Kingdom",
+        "Latitude" : 51.542294900000002,
+        "Longitude" : -0.16216420000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/primrose-hill.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 87,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.066797999999948843,
+          51.61772650000006
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 87,
+        "Name" : "Pymmes Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Victoria Rd, London N18 2UG, United Kingdom",
+        "Latitude" : 51.617726500000003,
+        "Longitude" : -0.066797999999999996,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/pymmes-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 88,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.0095148999999423722,
+          51.542686300000071
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 88,
+        "Name" : "Queen Elizabeth Olympic Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Westfield Avenue, London, E15 2DU, United Kingdom",
+        "Latitude" : 51.5426863,
+        "Longitude" : -0.0095148999999999997,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/olympic-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 89,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.21102269999994405,
+          51.535925500000076
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 89,
+        "Name" : "Queen's Park",
+        "Size_ha_" : 12,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Queens Park Lodge, Harvist Rd, London NW6 6SG, United Kingdom",
+        "Latitude" : 51.535925499999998,
+        "Longitude" : -0.21102270000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/queens-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 90,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.15757949999994025,
+          51.48758360000005
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 90,
+        "Name" : "Ranelagh Gardens",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Royal Hospital Chelsea, London SW3 4SR, United Kingdom",
+        "Latitude" : 51.487583600000001,
+        "Longitude" : -0.15757950000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/ranelagh-gardens.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 91,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.23725419999993846,
+          51.498529300000087
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 91,
+        "Name" : "Ravenscourt Park",
+        "Size_ha_" : 8,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Paddenswick Rd, London W6 0UA, United Kingdom",
+        "Latitude" : 51.498529300000001,
+        "Longitude" : -0.2372542,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/ravenscourt-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 92,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.11883459999995694,
+          51.353464900000063
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 92,
+        "Name" : "Roundshaw Downs",
+        "Size_ha_" : 52,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "35 Imperial Way, Croydon CR0 4RL, United Kingdom",
+        "Latitude" : 51.353464899999999,
+        "Longitude" : -0.1188346,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/roundshaw-downs.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 93,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.13737679999991315,
+          51.350847500000043
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 93,
+        "Name" : "Roundshaw Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "94 Foresters Dr, Wallington SM6 9JZ, United Kingdom",
+        "Latitude" : 51.3508475,
+        "Longitude" : -0.13737679999999999,
+        "City" : null,
+        "URL_name___size_" : null
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 94,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.090238199999930657,
+          51.465172600000074
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 94,
+        "Name" : "Ruskin Park",
+        "Size_ha_" : 88,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Denmark Hill, London SE5 8EL, United Kingdom",
+        "Latitude" : 51.465172600000002,
+        "Longitude" : -0.090238200000000005,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/ruskin-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 95,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.038107499999910033,
+          51.499538900000061
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 95,
+        "Name" : "Russia Dock Woodland",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Somerford Way, London SE16 6QW, United Kingdom",
+        "Latitude" : 51.499538899999997,
+        "Longitude" : -0.038107500000000002,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/russia-dock-woodland.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 96,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.030955999999946471,
+          51.483452300000067
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 96,
+        "Name" : "Sayes Court",
+        "Size_ha_" : 148,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Evelyn Street, Deptford, London, United Kingdom",
+        "Latitude" : 51.483452300000003,
+        "Longitude" : -0.030956000000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/sayes-court.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 97,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.087280400000054215,
+          51.414866000000075
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 97,
+        "Name" : "Scadbury Park",
+        "Size_ha_" : 741,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Old Perry St, Chislehurst BR7 6LS, United Kingdom",
+        "Latitude" : 51.414866000000004,
+        "Longitude" : 0.087280399999999994,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/scadbury-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 98,
+      "geometry" : null,
+      "properties" : {
+        "OBJECTID" : 98,
+        "Shape" : null,
+        "Name" : "Shooter's Hill",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : null,
+        "Latitude" : null,
+        "Longitude" : null,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/shooters-hill.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 99,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.06434219999994184,
+          51.396446900000058
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 99,
+        "Name" : "South Norwood Country Park",
+        "Size_ha_" : 47,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "193 Albert Rd, London BR3 4BT, United Kingdom",
+        "Latitude" : 51.396446900000001,
+        "Longitude" : -0.064342200000000002,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/south-norwood-country-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 100,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.053345599999943261,
+          51.49522520000005
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 100,
+        "Name" : "Southwark Park",
+        "Size_ha_" : 155,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Gomm Rd, London SE16 2TX, United Kingdom",
+        "Latitude" : 51.4952252,
+        "Longitude" : -0.0533456,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/southwark-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 101,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.061803499999939504,
+          51.572041500000068
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 101,
+        "Name" : "Springfield Park (London)",
+        "Size_ha_" : 14,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "61 Ashtead Rd, London E5 9AX, United Kingdom",
+        "Latitude" : 51.572041499999997,
+        "Longitude" : -0.061803499999999997,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/springfield-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 102,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.30334039999991091,
+          51.620401000000072
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 102,
+        "Name" : "Stanmore Country Park",
+        "Size_ha_" : 30,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Kerry Ave, Stanmore HA7 4NN, United Kingdom",
+        "Latitude" : 51.620401000000001,
+        "Longitude" : -0.30334040000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/stanmore-country-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 103,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.45640449999996235,
+          51.518379200000084
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 103,
+        "Name" : "Stockley County Park",
+        "Size_ha_" : 4447,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Stockley Rd, Hayes, West Drayton, Uxbridge UB8 3LL, United Kingdom",
+        "Latitude" : 51.518379199999998,
+        "Longitude" : -0.45640449999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/stockley-country-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 104,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.12344399999994948,
+          51.421179800000061
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 104,
+        "Name" : "Streatham Common",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Streatham Common, Streatham Common S, London SW16 3BX, United Kingdom",
+        "Latitude" : 51.421179799999997,
+        "Longitude" : -0.123444,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/streatham-common.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 105,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.073553200000048946,
+          51.451937400000077
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 105,
+        "Name" : "Sutcliffe Park",
+        "Size_ha_" : 16,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "A210, London SE9 6BA, United Kingdom",
+        "Latitude" : 51.451937399999998,
+        "Longitude" : 0.073553199999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/sutcliffe-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 106,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.067822799999930794,
+          51.428010400000062
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 106,
+        "Name" : "Sydenham Wells Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "London SE26 6QZ, United Kingdom",
+        "Latitude" : 51.428010399999998,
+        "Longitude" : -0.067822800000000003,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/sydenham-wells-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 107,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.31314889999993056,
+          51.480947900000047
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 107,
+        "Name" : "Syon Park",
+        "Size_ha_" : 80,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Brent Lea, Brentford TW8 8JF, United Kingdom",
+        "Latitude" : 51.480947899999997,
+        "Longitude" : -0.31314890000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/syon-house.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 108,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.28259690000004412,
+          51.551933300000087
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 108,
+        "Name" : "Thames Chase",
+        "Size_ha_" : 9842,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Broadfields Farm, Pike Ln, Upminster RM14 3NS, United Kingdom",
+        "Latitude" : 51.551933300000002,
+        "Longitude" : 0.28259689999999998,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/thames-chase.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 109,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.14435229999992316,
+          51.433994900000073
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 109,
+        "Name" : "Tooting Commons",
+        "Size_ha_" : 375,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Unnamed Road, London SW16 1RT, United Kingdom",
+        "Latitude" : 51.433994900000002,
+        "Longitude" : -0.14435229999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/tooting-commons.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 110,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.13116829999995616,
+          51.649248700000044
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 110,
+        "Name" : "Trent Country Park",
+        "Size_ha_" : 320,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "London N14 4UW, United Kingdom",
+        "Latitude" : 51.649248700000001,
+        "Longitude" : -0.13116829999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/trent-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 111,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.25712840000005599,
+          51.590266400000075
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 111,
+        "Name" : "Tylers Common",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Upminster RM14 1TR, United Kingdom",
+        "Latitude" : 51.590266399999997,
+        "Longitude" : 0.25712839999999998,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/tylers-common.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 112,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.13937430000004269,
+          51.557308500000033
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 112,
+        "Name" : "Valence Park",
+        "Size_ha_" : 68,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "107 Grafton Rd, Dagenham RM8 3EU, United Kingdom",
+        "Latitude" : 51.557308499999998,
+        "Longitude" : 0.13937430000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/valence-house-museum.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 113,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.066171100000076422,
+          51.564669000000038
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 113,
+        "Name" : "Valentines Park",
+        "Size_ha_" : 52,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Cranbrook Rd, Ilford IG1 4TG, United Kingdom",
+        "Latitude" : 51.564669000000002,
+        "Longitude" : 0.066171099999999997,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/valentines-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 114,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.12314859999992223,
+          51.507717300000081
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 114,
+        "Name" : "Victoria Embankment Gardens",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Villiers St, London WC2N 6NS, United Kingdom",
+        "Latitude" : 51.507717300000003,
+        "Longitude" : -0.1231486,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/victoria-embankment-gardens.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 115,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.041794199999912962,
+          51.533680000000061
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 115,
+        "Name" : "Victoria Park",
+        "Size_ha_" : 86,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Grove Rd, London E3 5TB, United Kingdom",
+        "Latitude" : 51.533679999999997,
+        "Longitude" : -0.041794199999999997,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/victoria-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 116,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.30731389999994008,
+          51.511449200000072
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 116,
+        "Name" : "Walpole Park",
+        "Size_ha_" : 69,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Mattock Ln, London W5 5EQ, United Kingdom",
+        "Latitude" : 51.511449200000001,
+        "Longitude" : -0.30731389999999997,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/walpole-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 117,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.17350089999990814,
+          51.449904700000047
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 117,
+        "Name" : "Wandsworth Common",
+        "Size_ha_" : 69,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Trinity Rd, London SW18 3RT, United Kingdom",
+        "Latitude" : 51.449904699999998,
+        "Longitude" : -0.17350090000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/wandsworth-common.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 118,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.20354979999996203,
+          51.461330600000053
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 118,
+        "Name" : "Wandsworth Park",
+        "Size_ha_" : 8,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Putney Bridge Rd, London SW15 2PA, United Kingdom",
+        "Latitude" : 51.461330599999997,
+        "Longitude" : -0.2035498,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/wandsworth-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 119,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.036322000000041044,
+          51.558904000000041
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 119,
+        "Name" : "Wanstead Park",
+        "Size_ha_" : 57,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "2LT, London E11 2LT, United Kingdom",
+        "Latitude" : 51.558903999999998,
+        "Longitude" : 0.036322,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/wanstead-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 120,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.1436678999999117,
+          51.569843500000047
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 120,
+        "Name" : "Waterlow Park",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Highgate Hill, London N6 5HD, United Kingdom",
+        "Latitude" : 51.569843499999998,
+        "Longitude" : -0.14366789999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/waterlow-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 121,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.022796200000072986,
+          51.538526700000034
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 121,
+        "Name" : "West Ham Park",
+        "Size_ha_" : 190,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Upton Ln, London E7 9PU, United Kingdom",
+        "Latitude" : 51.538526699999998,
+        "Longitude" : 0.022796199999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/west-ham-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 122,
+      "geometry" : null,
+      "properties" : {
+        "OBJECTID" : 122,
+        "Shape" : null,
+        "Name" : "Wildspace Conservation Park",
+        "Size_ha_" : 645,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : null,
+        "Latitude" : null,
+        "Longitude" : null,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/wildspace-conservation-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 123,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.20583549999992101,
+          51.433441300000084
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 123,
+        "Name" : "Wimbledon Park",
+        "Size_ha_" : 27,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Home Park Rd, London SW19 8AU, United Kingdom",
+        "Latitude" : 51.433441299999998,
+        "Longitude" : -0.2058355,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/wimbledon-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 124,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.22407309999994141,
+          51.527506500000072
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 124,
+        "Name" : "Woolwich Common",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Unnamed Road, London, United Kingdom",
+        "Latitude" : 51.527506500000001,
+        "Longitude" : -0.2240731,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/woolwich-common.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 125,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.23537989999994124,
+          51.519231700000034
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 125,
+        "Name" : "Wormwood Scrubs",
+        "Size_ha_" : 494,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "London W12 0DF, United Kingdom",
+        "Latitude" : 51.519231699999999,
+        "Longitude" : -0.2353799,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/wormwood-scrubs.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 126,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.23491669999992837,
+          51.475829600000054
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 126,
+        "Name" : "WWT London Wetland Centre",
+        "Size_ha_" : 29,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Queen Elizabeth Walk, London SW13 9WT, United Kingdom",
+        "Latitude" : 51.475829599999997,
+        "Longitude" : -0.23491670000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/wwt-london-wetland-centre.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 127,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.3582702999999583,
+          51.412373500000058
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 127,
+        "Name" : "Bushy Park",
+        "Size_ha_" : 445,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "Hampton Ct Rd, Hampton TW12 2EJ, United Kingdom",
+        "Latitude" : 51.412373500000001,
+        "Longitude" : -0.35827029999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/bushy-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 128,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.14156259999992926,
+          51.501010200000053
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 128,
+        "Name" : "Green Park",
+        "Size_ha_" : 19,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "London SW1A 1AA, United Kingdom",
+        "Latitude" : 51.501010200000003,
+        "Longitude" : -0.14156260000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/green-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 129,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          0.0030079000000569067,
+          51.472999800000082
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 129,
+        "Name" : "Greenwich Park",
+        "Size_ha_" : 74,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "London SE10 8QY, United Kingdom",
+        "Latitude" : 51.472999799999997,
+        "Longitude" : 0.0030079,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/greenwich-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 130,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.16625159999995276,
+          51.507999400000074
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 130,
+        "Name" : "Hyde Park and Kensington Gardens",
+        "Size_ha_" : null,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "London W2 2UH, United Kingdom",
+        "Latitude" : 51.507999400000003,
+        "Longitude" : -0.1662516,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/hyde-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 131,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.15122749999994767,
+          51.52848270000004
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 131,
+        "Name" : "Regent's Park",
+        "Size_ha_" : 170,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "London NW1 4NR, United Kingdom",
+        "Latitude" : 51.528482699999998,
+        "Longitude" : -0.15122749999999999,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/regents-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 132,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.28240639999995665,
+          51.451845000000048
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 132,
+        "Name" : "Richmond Park",
+        "Size_ha_" : 955,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "London TW10 5HS, United Kingdom",
+        "Latitude" : 51.451844999999999,
+        "Longitude" : -0.2824064,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/richmond-park.shtml"
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 133,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          -0.13018349999993006,
+          51.503032500000074
+        ]
+      },
+      "properties" : {
+        "OBJECTID" : 133,
+        "Name" : "St. James's Park",
+        "Size_ha_" : 23,
+        "Type" : null,
+        "Entry" : null,
+        "Facilities" : null,
+        "Address" : "London SW1A 2BJ, United Kingdom",
+        "Latitude" : 51.503032500000003,
+        "Longitude" : -0.13018350000000001,
+        "City" : "London",
+        "URL_name___size_" : "https://maps.walkingclub.org.uk/london-parks/st-jamess-park.shtml"
+      }
+    }
+  ]
+}

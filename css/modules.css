@@ -1,0 +1,163 @@
+/* ---------------------------------------------------------------------------------  
+  index ページ
+--------------------------------------------------------------------------------- */ 
+.no-scroll-bar {
+  overflow: hidden; /* Prevents scrolling */
+}
+
+#bg-image-globe {
+  background-image: url(../public/img/background/globe.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* Ensure full screen height */
+  min-height: 100vh; /* Ensures it covers the entire viewport height */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#top-page-title {
+height: 45vh;
+}
+
+#top-page-title div h1  {
+font-family: 'Courier New', Courier, monospace;
+font-size: 3.5rem;
+color: white;
+}
+
+
+/* ---------------------------------------------------------------------------------  
+  Cities ページ
+--------------------------------------------------------------------------------- */ 
+.no-scroll-bar {
+  overflow: hidden; /* Prevents scrolling */
+}
+
+@media screen and (max-width: 600px) {
+  .no-scroll-bar {
+    overflow: auto; /* Allows scrolling on smaller screens */
+  } 
+}
+
+#bg-image-globe {
+  background-image: url(../public/img/background/globe.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* Ensure full screen height */
+  min-height: 100vh; /* Ensures it covers the entire viewport height */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body a {
+  text-decoration: none;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
+
+.card-title{
+  font-family: 'Courier New', Courier, monospace;
+  color: #2699FB;
+}
+
+  /* 画像のフェードイン */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+/* ---------------------------------------------------------------------------------  
+  City Data ページ
+--------------------------------------------------------------------------------- */ 
+/* 一番上に配置 */
+.fixed-top {
+    z-index: 1050;
+}
+
+.flag-large {
+    width: auto;
+    height: auto;
+    font-size: 5em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Add a border around the flag */
+.bordered-flag {
+    /*border: 2px solid #333;*/
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+.map-legend {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  font-size: 14px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.legend-color {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+  border: 1px solid #888;
+}
+
+/* Fix the PC sidebar */
+@media (min-width: 992px) {
+    #sidebar-pc {
+        position: fixed;
+        top: 56px; /* Height of navbar, adjust if needed */
+        left: 0;
+        height: calc(100vh - 56px); /* Full height minus navbar */
+        z-index: 1020;
+        overflow-y: auto;
+    }
+
+    .col-lg-10 {
+        margin-left: 16.666667%; /* Bootstrap col-lg-2 width */
+    }
+}
+
+/* ---------------------------------------------------------------------------------  
+  Indicators ページ
+--------------------------------------------------------------------------------- */ 
+
+[id] {
+  scroll-margin-top: 80px; /* Adjust based on navbar height */
+}
+
+
+#countries-population {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
