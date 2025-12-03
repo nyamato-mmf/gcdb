@@ -118,9 +118,11 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, pitch) {
 /* -------------------------------------------------------------
     都市境界マップ
 ------------------------------------------------------------- */
+const countryCode = cityCountryMap[cityParam] || cityCountryMap[DEFAULT_CITY];
+var path_boundary = './data/map/boundary/geojson/boundary_' + countryCode.toLowerCase() + '.geojson';
 setupMap(
     'boundary_map', 
-    './data/map/boundary/geojson/boundary.geojson', 
+    path_boundary, 
     'fill', {
     'fill-color': [
         'case',
@@ -169,10 +171,10 @@ setupMap(
 /* -------------------------------------------------------------
     フライト・ネットワーク・マップ
 ------------------------------------------------------------- */
-var path = './data/map/infrastructure/flight_network/geojson/fly-' + cityParam.toLowerCase() + '_linestring.geojson';
+var path_flight_network = './data/map/infrastructure/flight_network/geojson/fly-' + cityParam.toLowerCase() + '_linestring.geojson';
 setupMap(
     'flight_network_map', 
-    path, 
+    path_flight_network, 
     'line', { 
         'line-color': 'yellow' 
     },
