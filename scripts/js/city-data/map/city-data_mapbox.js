@@ -205,6 +205,39 @@ setupMap(
 );
 
 /* -------------------------------------------------------------
+    外国人人口密度マップ
+------------------------------------------------------------- */
+var foreign_resident_boundary = './data/map/demographics/foreign_resident/countries/geojson/foreign_resident_' + countryCode.toLowerCase() + '.geojson';
+setupMap(
+    'foreign_resident_map', 
+    foreign_resident_boundary, 
+    'fill-extrusion',
+    {
+        'fill-extrusion-color': [
+            'interpolate',
+            ['linear'],
+            ['coalesce', ['get', 'foreign_resident_density'], 0],
+                0,      '#3288bd',    // 0 未満の値
+                500,   '#83e19d',    // 0 から 500 未満
+                1000,  '#fee08b',    // 500 から 1000 未満
+                1500,  '#f9993b',    // 1000 から 1500 未満
+                2000,  '#ef5305',    // 1500 から 2000 未満
+                2500,  '#d53e4f',    // 2000 から 2500 未満
+                3000,  '#c62240',    // 2500 から 3000 未満
+                3500,  '#b31535',    // 3000 から 3500 未満
+                4000,  '#9f0729',    // 3500 から 4000 未満
+                4500,  '#8b001d',    // 4000 から 4500 未満
+                5000,  '#7a0014'     // 4500 以上の値 (5000+ を含む)
+            ],
+            'fill-extrusion-height': ['*', ['coalesce', ['get', 'foreign_resident_density'], 0], 0.1],
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 1.0,
+        },
+    zoom=5,
+    pitch=30
+);
+
+/* -------------------------------------------------------------
     フライト・ネットワーク・マップ
 ------------------------------------------------------------- */
 var path_flight_network = './data/map/infrastructure/flight_network/geojson/fly-' + cityParam.toLowerCase() + '_linestring.geojson';
