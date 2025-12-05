@@ -114,9 +114,13 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, pitch) {
 }
 
 /* -------------------------------------------------------------
-    都市境界マップ
+    国コードの取得
 ------------------------------------------------------------- */
 const countryCode = cityCountryMap[cityParam] || cityCountryMap[DEFAULT_CITY];
+
+/* -------------------------------------------------------------
+    都市境界マップ
+------------------------------------------------------------- */
 var path_boundary = './data/map/boundary/geojson/boundary_' + countryCode.toLowerCase() + '.geojson';
 setupMap(
     'boundary_map', 
@@ -137,15 +141,16 @@ setupMap(
 /* -------------------------------------------------------------
     人口密度マップ
 ------------------------------------------------------------- */
+var population_boundary = './data/map/demographics/population/countries/geojson/population_' + countryCode.toLowerCase() + '.geojson';
 setupMap(
     'population_country_map', 
-    './data/map/demographics/population/countries/geojson/population_jp.geojson',
+    population_boundary,
     'fill-extrusion',
     {
         'fill-extrusion-color': [
             'interpolate',
             ['linear'],
-            ['coalesce', ['get', 'POPULATION_DENSITY'], 0],
+            ['coalesce', ['get', 'population_density'], 0],
                 0,      '#3288bd',    // 0 未満の値
                 5000,   '#83e19d',    // 0 から 5000 未満
                 10000,  '#fee08b',    // 5000 から 10000 未満
@@ -158,7 +163,7 @@ setupMap(
                 45000,  '#8b001d',    // 40000 から 45000 未満
                 50000,  '#7a0014'     // 45000 以上の値 (50000+ を含む)
             ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'POPULATION_DENSITY'], 0], 0.5],
+            'fill-extrusion-height': ['*', ['coalesce', ['get', 'population_density'], 0], 0.5],
             'fill-extrusion-base': 0,
             'fill-extrusion-opacity': 1.0,
         },
