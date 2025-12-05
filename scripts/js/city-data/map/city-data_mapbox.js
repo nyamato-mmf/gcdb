@@ -110,8 +110,6 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, pitch) {
     });
     map.addControl(new mapboxgl.FullscreenControl());
     return map;
-    
-    
 
 }
 
@@ -141,7 +139,7 @@ setupMap(
 ------------------------------------------------------------- */
 setupMap(
     'population_country_map', 
-    './data/map/demographics/population/countries/geojson/Japanpop_density_2020.geojson',
+    './data/map/demographics/population/countries/geojson/population_jp.geojson',
     'fill-extrusion',
     {
         'fill-extrusion-color': [
@@ -160,7 +158,40 @@ setupMap(
                 45000,  '#8b001d',    // 40000 から 45000 未満
                 50000,  '#7a0014'     // 45000 以上の値 (50000+ を含む)
             ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'POPULATION_DENSITY'], 0], 1],
+            'fill-extrusion-height': ['*', ['coalesce', ['get', 'POPULATION_DENSITY'], 0], 0.5],
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 1.0,
+        },
+    zoom=5,
+    pitch=30
+);
+
+/* -------------------------------------------------------------
+    従業者密度マップ
+------------------------------------------------------------- */
+var employment_boundary = './data/map/demographics/employment/countries/geojson/employment_' + countryCode.toLowerCase() + '.geojson';
+setupMap(
+    'employment_map', 
+    employment_boundary, 
+    'fill-extrusion',
+    {
+        'fill-extrusion-color': [
+            'interpolate',
+            ['linear'],
+            ['coalesce', ['get', 'employee_density'], 0],
+                0,      '#3288bd',    // 0 未満の値
+                5000,   '#83e19d',    // 0 から 5000 未満
+                10000,  '#fee08b',    // 5000 から 10000 未満
+                15000,  '#f9993b',    // 10000 から 15000 未満
+                20000,  '#ef5305',    // 15000 から 20000 未満
+                25000,  '#d53e4f',    // 20000 から 25000 未満
+                30000,  '#c62240',    // 25000 から 30000 未満
+                35000,  '#b31535',    // 30000 から 35000 未満
+                40000,  '#9f0729',    // 35000 から 40000 未満
+                45000,  '#8b001d',    // 40000 から 45000 未満
+                50000,  '#7a0014'     // 45000 以上の値 (50000+ を含む)
+            ],
+            'fill-extrusion-height': ['*', ['coalesce', ['get', 'employee_density'], 0], 0.5],
             'fill-extrusion-base': 0,
             'fill-extrusion-opacity': 1.0,
         },
