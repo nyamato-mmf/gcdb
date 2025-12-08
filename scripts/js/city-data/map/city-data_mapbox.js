@@ -106,6 +106,25 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
             });
         }
 
+        // ポップアップ表示の設定
+        map.on('click', 'geodata-layer', function (e) {
+            const feature = e.features[0];
+            const popupName = feature.properties.popup_name || 'N/A';
+            const popupValue = feature.properties.popup_value || 'N/A'; 
+            const popupUnit = feature.properties.popup_unit || ''; 
+
+            new mapboxgl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(`<strong>${popupName}:</strong> ${popupValue}<br>${popupUnit}`)
+                .addTo(map);
+        });
+        map.on('mouseenter', 'geodata-layer', function () {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+        map.on('mouseleave', 'geodata-layer', function () {
+            map.getCanvas().style.cursor = '';
+        });
+
         // データがロードされたらスピナーを非表示にする
         if (spinner) spinner.style.display = 'none';
     });
