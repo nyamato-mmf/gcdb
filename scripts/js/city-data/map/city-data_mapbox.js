@@ -201,7 +201,7 @@ setupMap(
             'fill-extrusion-opacity': 1.0,
         },
     zoom=5,
-    maxZoom=8,
+    maxZoom=10,
     pitch=30
 );
 
@@ -235,7 +235,7 @@ setupMap(
             'fill-extrusion-opacity': 1.0,
         },
     zoom=5,
-    maxZoom=8,
+    maxZoom=10,
     pitch=30
 );
 
@@ -269,7 +269,7 @@ setupMap(
             'fill-extrusion-opacity': 1.0,
         },
     zoom=5,
-    maxZoom=8,
+    maxZoom=10,
     pitch=30
 );
 
