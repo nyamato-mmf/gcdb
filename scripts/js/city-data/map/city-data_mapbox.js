@@ -64,7 +64,7 @@ const flyLocations = {
 };
 
 // 地図のセットアップ関数
-function setupMap(containerId, geojsonPath, type, paint, zoom, pitch) {
+function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
     // Show spinner
     const spinner = document.getElementById(`spinner-${containerId.replace('_map','')}`);
     if (spinner) spinner.style.display = 'block';
@@ -74,6 +74,7 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, pitch) {
         container: containerId,
         style: "mapbox://styles/nyamato/ckt5grlhv20td17o5ijrf84wz",
         zoom: 1,
+        maxZoom: maxZoom || 15,
         center: [-0.13048539486171945, 51.52163143835778]
     });
 
@@ -135,6 +136,7 @@ setupMap(
         'fill-opacity': 0.5,
     },
     zoom=5,
+    maxZoom=15,
     pitch=0
 );
 
@@ -168,6 +170,7 @@ setupMap(
             'fill-extrusion-opacity': 1.0,
         },
     zoom=5,
+    maxZoom=8,
     pitch=30
 );
 
@@ -201,6 +204,7 @@ setupMap(
             'fill-extrusion-opacity': 1.0,
         },
     zoom=5,
+    maxZoom=8,
     pitch=30
 );
 
@@ -234,6 +238,7 @@ setupMap(
             'fill-extrusion-opacity': 1.0,
         },
     zoom=5,
+    maxZoom=8,
     pitch=30
 );
 
@@ -248,6 +253,7 @@ setupMap(
         'line-color': 'yellow' 
     },
     zoom=2,
+    maxZoom=8,
     pitch=0
 )
 
@@ -261,5 +267,6 @@ setupMap(
         'line-color': 'red' 
     },
     zoom=5,
+    maxZoom=8,
     pitch=0
 )
