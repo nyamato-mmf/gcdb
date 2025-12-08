@@ -110,7 +110,7 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
         map.on('click', 'geodata-layer', function (e) {
             const feature = e.features[0];
             const popupName = feature.properties.popup_name || 'N/A';
-            const popupValue = feature.properties.popup_value || 'N/A'; 
+            const popupValue = feature.properties.popup_value || ''; 
             const popupUnit = feature.properties.popup_unit || ''; 
 
             new mapboxgl.Popup()
