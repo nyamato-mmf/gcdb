@@ -115,7 +115,7 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
 
             new mapboxgl.Popup()
                 .setLngLat(e.lngLat)
-                .setHTML(`<strong>${popupName}:</strong> ${popupValue}<br>${popupUnit}`)
+                .setHTML(`<strong>${popupName}:</strong>${popupValue} ${popupUnit}`)
                 .addTo(map);
         });
         map.on('mouseenter', 'geodata-layer', function () {
