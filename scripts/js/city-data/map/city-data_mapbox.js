@@ -128,10 +128,22 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
         // データがロードされたらスピナーを非表示にする
         if (spinner) spinner.style.display = 'none';
     });
-    map.addControl(new mapboxgl.FullscreenControl());
-    return map;
 
+    map.on('error', (e) => {
+        if (e.error?.status === 404) {
+            const container = document.getElementById(containerId);
+            if (container) {
+                container.innerHTML = '<div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 24px; color: #999;">Coming soon</div>';
+            }
+            if (spinner) spinner.style.display = 'none';
+        }
+    });
+
+    map.addControl(new mapboxgl.FullscreenControl());
+    return map;  
+    
 }
+
 
 /* -------------------------------------------------------------
     国コードの取得
