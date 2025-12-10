@@ -208,10 +208,112 @@ setupMap(
 /* -------------------------------------------------------------
     従業者密度マップ
 ------------------------------------------------------------- */
-var employment_boundary = './data/map/demographics/employment/countries/geojson/employment_' + countryCode.toLowerCase() + '.geojson';
+var employment_density = './data/map/demographics/employment/countries/geojson/employment_' + countryCode.toLowerCase() + '.geojson';
 setupMap(
     'employment_map', 
-    employment_boundary, 
+    employment_density, 
+    'fill-extrusion',
+    {
+        'fill-extrusion-color': [
+            'interpolate',
+            ['linear'],
+            ['coalesce', ['get', 'employee_density'], 0],
+                0,      '#3288bd',    // 0 未満の値
+                5000,   '#83e19d',    // 0 から 5000 未満
+                10000,  '#fee08b',    // 5000 から 10000 未満
+                15000,  '#f9993b',    // 10000 から 15000 未満
+                20000,  '#ef5305',    // 15000 から 20000 未満
+                25000,  '#d53e4f',    // 20000 から 25000 未満
+                30000,  '#c62240',    // 25000 から 30000 未満
+                35000,  '#b31535',    // 30000 から 35000 未満
+                40000,  '#9f0729',    // 35000 から 40000 未満
+                45000,  '#8b001d',    // 40000 から 45000 未満
+                50000,  '#7a0014'     // 45000 以上の値 (50000+ を含む)
+            ],
+            'fill-extrusion-height': ['*', ['coalesce', ['get', 'employee_density'], 0], 0.5],
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 1.0,
+        },
+    zoom=5,
+    maxZoom=10,
+    pitch=30
+);
+
+/* -------------------------------------------------------------
+    従業者密度マップ (第一次産業)
+------------------------------------------------------------- */
+var employment_1st_industry_density = './data/map/demographics/employment/countries/geojson/employment_1st_industry_' + countryCode.toLowerCase() + '.geojson';
+setupMap(
+    'employment_1st_industry_map', 
+    employment_1st_industry_density, 
+    'fill-extrusion',
+    {
+        'fill-extrusion-color': [
+            'interpolate',
+            ['linear'],
+            ['coalesce', ['get', 'employee_density'], 0],
+                0,      '#3288bd',    // 0 未満の値
+                5,   '#83e19d',    // 0 から 5000 未満
+                10,  '#fee08b',    // 5000 から 10000 未満
+                15,  '#f9993b',    // 10000 から 15000 未満
+                20,  '#ef5305',    // 15000 から 20000 未満
+                25,  '#d53e4f',    // 20000 から 25000 未満
+                30,  '#c62240',    // 25000 から 30000 未満
+                35,  '#b31535',    // 30000 から 35000 未満
+                40,  '#9f0729',    // 35000 から 40000 未満
+                45,  '#8b001d',    // 40000 から 45000 未満
+                50,  '#7a0014'     // 45000 以上の値 (50000+ を含む)
+            ],
+            'fill-extrusion-height': ['*', ['coalesce', ['get', 'employee_density'], 0], 0.5],
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 1.0,
+        },
+    zoom=5,
+    maxZoom=10,
+    pitch=30
+);
+
+/* -------------------------------------------------------------
+    従業者密度マップ (第二次産業)
+------------------------------------------------------------- */
+var employment_2nd_industry_density = './data/map/demographics/employment/countries/geojson/employment_2nd_industry_' + countryCode.toLowerCase() + '.geojson';
+setupMap(
+    'employment_2nd_industry_map', 
+    employment_2nd_industry_density, 
+    'fill-extrusion',
+    {
+        'fill-extrusion-color': [
+            'interpolate',
+            ['linear'],
+            ['coalesce', ['get', 'employee_density'], 0],
+                0,      '#3288bd',    // 0 未満の値
+                1000,   '#83e19d',    // 0 から 5000 未満
+                2000,  '#fee08b',    // 5000 から 10000 未満
+                3000,  '#f9993b',    // 10000 から 15000 未満
+                4000,  '#ef5305',    // 15000 から 20000 未満
+                5000,  '#d53e4f',    // 20000 から 25000 未満
+                6000,  '#c62240',    // 25000 から 30000 未満
+                7000,  '#b31535',    // 30000 から 35000 未満
+                8000,  '#9f0729',    // 35000 から 40000 未満
+                9000,  '#8b001d',    // 40000 から 45000 未満
+                10000,  '#7a0014'     // 45000 以上の値 (50000+ を含む)
+            ],
+            'fill-extrusion-height': ['*', ['coalesce', ['get', 'employee_density'], 0], 0.5],
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 1.0,
+        },
+    zoom=5,
+    maxZoom=10,
+    pitch=30
+);
+
+/* -------------------------------------------------------------
+    従業者密度マップ (第三次産業)
+------------------------------------------------------------- */
+var employment_3rd_industry_density = './data/map/demographics/employment/countries/geojson/employment_3rd_industry_' + countryCode.toLowerCase() + '.geojson';
+setupMap(
+    'employment_3rd_industry_map', 
+    employment_3rd_industry_density, 
     'fill-extrusion',
     {
         'fill-extrusion-color': [
