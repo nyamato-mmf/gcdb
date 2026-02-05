@@ -72,7 +72,7 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
     // Create the map
     const map = new mapboxgl.Map({
         container: containerId,
-        style: "mapbox://styles/nyamato/ckt5grlhv20td17o5ijrf84wz",
+        style: "mapbox://styles/nyamato/ckpx9lvxz0lj217pernr3nomm",
         zoom: 1,
         maxZoom: maxZoom || 15,
         center: [-0.13048539486171945, 51.52163143835778]
@@ -346,27 +346,27 @@ setupMap(
 ------------------------------------------------------------- */
 var foreign_resident_boundary = './data/map/demographics/foreign_resident/countries/geojson/foreign_resident_' + countryCode.toLowerCase() + '.geojson';
 setupMap(
-    'foreign_resident_map', 
+    'foreign_resident_map', // Same ID
     foreign_resident_boundary, 
-    'fill-extrusion',
+    'fill-extrusion', 
     {
         'fill-extrusion-color': [
             'interpolate',
             ['linear'],
             ['coalesce', ['get', 'foreign_resident_density'], 0],
-                0,      '#3288bd',    // 0 未満の値
-                500,   '#83e19d',    // 0 から 500 未満
-                1000,  '#fee08b',    // 500 から 1000 未満
-                1500,  '#f9993b',    // 1000 から 1500 未満
-                2000,  '#ef5305',    // 1500 から 2000 未満
-                2500,  '#d53e4f',    // 2000 から 2500 未満
-                3000,  '#c62240',    // 2500 から 3000 未満
-                3500,  '#b31535',    // 3000 から 3500 未満
-                4000,  '#9f0729',    // 3500 から 4000 未満
-                4500,  '#8b001d',    // 4000 から 4500 未満
-                5000,  '#7a0014'     // 4500 以上の値 (5000+ を含む)
-            ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'foreign_resident_density'], 0], 0.1],
+            0,    '#3b0f70', // 0
+            100,  '#59157e', // 100
+            200,  '#781c81', // 200
+            300,  '#98217d', // 300
+            400,  '#b82773', // 400
+            500,  '#d03463', // 500
+            600,  '#e54753', // 600
+            700,  '#f36240', // 700
+            800,  '#fb812d', // 800
+            900,  '#fca51a', // 900
+            1000, '#f7cb15'  // 1000+
+        ],
+            'fill-extrusion-height': ['*', ['coalesce', ['get', 'foreign_resident_density'], 0], 0.5],
             'fill-extrusion-base': 0,
             'fill-extrusion-opacity': 1.0,
         },
@@ -394,10 +394,24 @@ setupMap(
     鉄道路線マップ
 ------------------------------------------------------------- */
 setupMap(
-    'railway_map', 
-    './data/map/infrastructure/railway/geojson/railway_japan.geojson', 
+    'railway_network_map', 
+    './data/map/infrastructure/railway_network/geojson/railway_network_jp.geojson', 
     'line', { 
         'line-color': 'red' 
+    },
+    zoom=5,
+    maxZoom=8,
+    pitch=0
+)
+
+/* -------------------------------------------------------------
+    高速道路路線マップ
+------------------------------------------------------------- */
+setupMap(
+    'highway_network_map', 
+    './data/map/infrastructure/highway_network/geojson/highway_network_jp.geojson', 
+    'line', { 
+        'line-color': 'blue'
     },
     zoom=5,
     maxZoom=8,

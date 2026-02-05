@@ -178,7 +178,8 @@
                         <div class="collapse mt-1" id="infrastructureSubmenu">
                             <div class="ps-3">
                                 <a href="#flight_network" class="btn btn-outline-secondary btn-sm w-100 mb-1">Flight Network</a>
-                                <a href="#railway" class="btn btn-outline-secondary btn-sm w-100 mb-1">Railway</a>
+                                <a href="#railway_network" class="btn btn-outline-secondary btn-sm w-100 mb-1">Railway Network</a>
+                                <a href="#highway_network" class="btn btn-outline-secondary btn-sm w-100 mb-1">Highway Network</a>
                             </div>
                         </div>
                     </div>
@@ -235,7 +236,10 @@
                 ---------------------------------------------------------------------------- -->
                 <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
                     <h1 id="demographics" class="display-6 fw-bold">Demographics</h1>
-                    <div class="row">
+                    <!-- ----------------------------------------------------------------------------
+                    居住者
+                    ---------------------------------------------------------------------------- -->
+                    <div class="row mt-3">
                         <h3 id="population" class="display-6">| Population Density</h3>
                         <div style="position:relative; padding: 0;">
                             <div id="population_country_map" class="col-sm-12 p-3 bg-light border" style="height: 500px;"></div>
@@ -257,37 +261,54 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4 p-3 bg-light border" style="height: 350px;">
+                        <div class="col-sm-4 p-3 bg-light" style="height: 350px;">
                             <!-- 人口変遷グラフ　国 -->
                             <canvas id="country-population-timeseries"></canvas>
                             <small class="mb-5">Source: XXXXX</small>
                         </div>
-                        <div class="col-sm-4 p-3 bg-light border" style="height: 350px;">
+                        <div class="col-sm-4 p-3 bg-light" style="height: 350px;">
                             <!-- 人口変遷グラフ　都市圏 -->
                             <canvas id="metropolitan-population-timeseries"></canvas>
                             <small class="mb-5">Source: XXXXX</small>
                         </div>
-                        <div class="col-sm-4 p-3 bg-light border" style="height: 350px;">
+                        <div class="col-sm-4 p-3 bg-light" style="height: 350px;">
                             <!-- 人口変遷グラフ 都市 -->
                             <canvas id="city-population-timeseries"></canvas>
                             <small class="mb-5">Source: XXXXX</small>
                         </div>
                     </div>
-                    <div class="row">
+                    <!-- ----------------------------------------------------------------------------
+                    従業者
+                    ---------------------------------------------------------------------------- -->
+                    <div class="row mt-3">
                         <h3 id="employment" class="display-6">| Employee Density</h3>
-                        <div id="employment_map" class="col-sm-12 p-3 bg-light border" style="height: 350px;"></div>
+                        <div class="row text-center">
+                            <h5 class="mb-2">All Industries</h5>
+                        </div>
+                        <div id="employment_map" class="col-sm-12 p-3 bg-light border" style="height: 500px;"></div>
                     </div>
-                    <div class="row">
-                        <!-- 第一次産業マップ -->
-                        <div id="employment_1st_industry_map" class="col-sm-4 p-3 bg-light border" style="height: 350px;"></div>
-                        <!-- 第二次産業マップ -->
-                        <div id="employment_2nd_industry_map" class="col-sm-4 p-3 bg-light border" style="height: 350px;"></div>
-                        <!-- 第三次産業マップ -->
-                        <div id="employment_3rd_industry_map" class="col-sm-4 p-3 bg-light border" style="height: 350px;"></div>
-                    </div>
-                    <div class="row">
-                        <h3 id="foreign_resident" class="display-6">| Foreign Residents</h3>
-                        <div id="foreign_resident_map" class="col-sm-12 p-3 bg-light border" style="height: 350px;"></div>
+                        <div class="row text-center">
+                            <div class="col-sm-4 p-2">
+                                <h5 class="mb-2">Primary Industry</h5>
+                                <div id="employment_1st_industry_map" class="bg-light border" style="height: 350px;"></div>
+                            </div>
+
+                            <div class="col-sm-4 p-2">
+                                <h5 class="mb-2">Secondary Industry</h5>
+                                <div id="employment_2nd_industry_map" class="bg-light border" style="height: 350px;"></div>
+                            </div>
+
+                            <div class="col-sm-4 p-2">
+                                <h5 class="mb-2">Tertiary Industry</h5>
+                                <div id="employment_3rd_industry_map" class="bg-light border" style="height: 350px;"></div>
+                            </div>
+                        </div>
+                    <!-- ----------------------------------------------------------------------------
+                    外国人居住者
+                    ---------------------------------------------------------------------------- -->
+                    <div class="row mt-3">
+                        <h3 id="foreign_resident" class="display-6">| Foreign Residents Density</h3>
+                        <div id="foreign_resident_map" class="col-sm-12 p-3 bg-light border" style="height: 500px;"></div>
                     </div>
                 </section>
                 <!-- ----------------------------------------------------------------------------
@@ -295,22 +316,27 @@
                 ---------------------------------------------------------------------------- -->
                 <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
                     <h1 id="infrastructure" class="display-6 fw-bold">Infrastructure</h1>
-                    <div class="row">
+                    <!-- ----------------------------------------------------------------------------
+                    航空ネットワーク
+                    ---------------------------------------------------------------------------- -->
+                    <div class="row mt-3">
                         <h3 id="flight_network" class="display-6">| Flight Network</h3>
-                        <div id="flight_network_map" class="col-sm-12 p-3 bg-light border" style="height: 350px;"></div>
+                        <div id="flight_network_map" class="col-sm-12 p-3 bg-light border" style="height: 500px;"></div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-6 p-3 bg-light border" style="height: 350px;">グラフ</div>
-                        <div class="col-sm-6 p-3 bg-light border" style="height: 350px;">グラフ</div>
-                    </div> 
-                    <div class="row">
-                        <h3 id="railway" class="display-6">| Railway</h3>
-                        <div id="railway_map" class="col-sm-12 p-3 bg-light border" style="height: 350px;"></div>
+                    <!-- ----------------------------------------------------------------------------
+                    鉄道ネットワーク
+                    ---------------------------------------------------------------------------- --> 
+                    <div class="row mt-3">
+                        <h3 id="railway_network" class="display-6">| Railway Network</h3>
+                        <div id="railway_network_map" class="col-sm-12 p-3 bg-light border" style="height: 500px;"></div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-6 p-3 bg-light border" style="height: 350px;">グラフ</div>
-                        <div class="col-sm-6 p-3 bg-light border" style="height: 350px;">グラフ</div>
-                    </div> 
+                    <!-- ----------------------------------------------------------------------------
+                    高速道路ネットワーク
+                    ---------------------------------------------------------------------------- --> 
+                    <div class="row mt-3">
+                        <h3 id="highway" class="display-6">| Highway Network</h3>
+                        <div id="highway_network_map" class="col-sm-12 p-3 bg-light border" style="height: 500px;"></div>
+                    </div>
                 </section>
                 <!-- ----------------------------------------------------------------------------
                     ダミー
