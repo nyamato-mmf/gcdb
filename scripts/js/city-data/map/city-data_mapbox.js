@@ -383,7 +383,7 @@ setupMap(
     'flight_network_map', 
     path_flight_network, 
     'line', { 
-        'line-color': 'yellow' 
+        'line-color': 'green' 
     },
     zoom=2,
     maxZoom=8,
@@ -395,7 +395,7 @@ setupMap(
 ------------------------------------------------------------- */
 setupMap(
     'railway_network_map', 
-    './data/map/infrastructure/railway_network/geojson/railway_network_jp.geojson', 
+    './data/map/infrastructure/railway_network/geojson/railway_network_' + countryCode.toLowerCase() + '.geojson', 
     'line', { 
         'line-color': 'red' 
     },
@@ -409,7 +409,7 @@ setupMap(
 ------------------------------------------------------------- */
 setupMap(
     'highway_network_map', 
-    './data/map/infrastructure/highway_network/geojson/highway_network_jp.geojson', 
+    './data/map/infrastructure/highway_network/geojson/highway_network_' + countryCode.toLowerCase() + '.geojson', 
     'line', { 
         'line-color': 'blue'
     },
