@@ -414,6 +414,6 @@ setupMap(
         'line-color': 'blue'
     },
     zoom=5,
-    maxZoom=8,
+    maxZoom=15,
     pitch=0
 )
