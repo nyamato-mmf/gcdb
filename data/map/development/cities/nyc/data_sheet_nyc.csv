@@ -1,10 +1,10 @@
-﻿name,year,lat,lon,popup_name,popup_value
-7 Platt Street_2026,2026,40.7076272,-74.0063197,7 Platt Street,2026
-450 11th Avenue_2026,2026,40.7451255,-74.0080351,450 11th Avenue,2026
-45 Park Place_2027,2027,40.71397397,-74.0099884,45 Park Place,2027
-75 Nassau Street_2027,2027,40.7098635,-74.0083969,75 Nassau Street,2027
-70 Hudson Yards_2028,2028,40.7559976,-73.9994426,70 Hudson Yards,2028
-3 Hudson Boulevard_TBD,TBD,40.7558239,-74.0015048,3 Hudson Boulevard,TBD
-5 World Trade Center_TBD,TBD,40.712725,-74.0123523,5 World Trade Center,TBD
-75 Nassau Street_TBD,TBD,40.7098635,-74.0083969,75 Nassau Street,TBD
-161 Maiden Lane (One Seaport)_TBD,TBD,40.7056456,-74.0049485,161 Maiden Lane (One Seaport),TBD
+﻿name,year
+7 Platt Street_2026,2026
+450 11th Avenue_2026,2026
+45 Park Place_2027,2027
+75 Nassau Street_2027,2027
+70 Hudson Yards_2028,2028
+3 Hudson Boulevard_TBD,TBD
+5 World Trade Center_TBD,TBD
+75 Nassau Street_TBD,TBD
+161 Maiden Lane (One Seaport)_TBD,TBD

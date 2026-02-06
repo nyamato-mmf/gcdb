@@ -487,7 +487,7 @@ setupMap(
         ],
         'circle-opacity': 0.7,
         'circle-stroke-color': '#ffffff',
-        'circle-stroke-width': 1
+        'circle-stroke-width': 1,
     },
     zoom=10,
     maxZoom=15,
