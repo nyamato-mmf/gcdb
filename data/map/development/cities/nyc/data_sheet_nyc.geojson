@@ -1,0 +1,131 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "7 Platt Street",
+        "popup_value": "2026"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0063197,
+          40.7076272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "450 11th Avenue",
+        "popup_value": "2026"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0080351,
+          40.7451255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "45 Park Place",
+        "popup_value": "2027"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0099884,
+          40.71397397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "75 Nassau Street",
+        "popup_value": "2027"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0083969,
+          40.7098635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "70 Hudson Yards",
+        "popup_value": "2028"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9994426,
+          40.7559976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "3 Hudson Boulevard",
+        "popup_value": "TBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0015048,
+          40.7558239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "5 World Trade Center",
+        "popup_value": "TBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0123523,
+          40.712725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "75 Nassau Street",
+        "popup_value": "TBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0083969,
+          40.7098635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "161 Maiden Lane (One Seaport)",
+        "popup_value": "TBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0049485,
+          40.7056456
+        ]
+      }
+    }
+  ]
+}

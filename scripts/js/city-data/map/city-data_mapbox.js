@@ -123,21 +123,52 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
         const eventLayer = (type === 'line') ? 'geodata-interaction-layer' : 'geodata-layer';
         map.on('click', eventLayer, function (e) {
             const feature = e.features[0];
-            const popupName = feature.properties.popup_name || 'N/A';
-            const popupValue = feature.properties.popup_value || ''; 
-            const popupUnit = feature.properties.popup_unit || ''; 
 
-            new mapboxgl.Popup()
+            const popupName  = feature.properties.popup_name || 'N/A';
+            const popupValue = feature.properties.popup_value || '';
+            const popupUnit  = feature.properties.popup_unit || '';
+
+            const name = feature.properties.popup_name;
+            const year = feature.properties.popup_value;
+
+            let imgHTML = '';
+
+            if (name && year) {
+                const imgPath =
+                    `./data/map/development/cities/${cityParam.toLowerCase()}/${year}/${name}_${year}.jpg`;
+
+                imgHTML = `
+                    <img 
+                        src="${imgPath}"
+                        style="width:100%; height:auto; border-radius:6px; margin-top:6px;"
+                        onerror="this.style.display='none'"
+                    />
+                `;
+            }
+
+            const popupHTML = `
+                <div style="max-width:260px;">
+                    <div style="font-weight:bold; margin-bottom:6px;">
+                        ${popupName}: ${popupValue} ${popupUnit}
+                    </div>
+                    ${imgHTML}
+                </div>
+            `;
+
+            new mapboxgl.Popup({ closeButton: true })
                 .setLngLat(e.lngLat)
-                .setHTML(`<strong>${popupName}:</strong>${popupValue} ${popupUnit}`)
+                .setHTML(popupHTML)
                 .addTo(map);
         });
+
         map.on('mouseenter', eventLayer, function () {
             map.getCanvas().style.cursor = 'pointer';
         });
+
         map.on('mouseleave', eventLayer, function () {
             map.getCanvas().style.cursor = '';
         });
+
 
         // データがロードされたらスピナーを非表示にする
         if (spinner) spinner.style.display = 'none';
@@ -284,7 +315,7 @@ setupMap(
         },
     zoom=5,
     maxZoom=10,
-    pitch=30
+    pitch=30,
 );
 
 /* -------------------------------------------------------------
@@ -434,3 +465,32 @@ setupMap(
     maxZoom=15,
     pitch=0
 )
+
+/* -------------------------------------------------------------
+    開発プロジェクトマップ
+------------------------------------------------------------- */
+var path_development_projects = './data/map/development/cities/' + cityParam.toLowerCase() + '/data_sheet_' + cityParam.toLowerCase() + '.geojson';
+
+setupMap(
+    'development_projects_map',
+    path_development_projects,
+    'circle',
+    {
+        'circle-color': '#e63946',
+        'circle-radius': [
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            5, 4,
+            10, 8,
+            15, 16
+        ],
+        'circle-opacity': 0.7,
+        'circle-stroke-color': '#ffffff',
+        'circle-stroke-width': 1
+    },
+    zoom=10,
+    maxZoom=15,
+    pitch=0
+);
+
