@@ -93,6 +93,18 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
                 'source': 'geodata',
                 'paint': paint,
             });
+            // If the layer is a line, add a wider invisible layer for easier interaction
+            if (type === 'line') {
+                map.addLayer({
+                    'id': 'geodata-interaction-layer',
+                    'type': 'line',
+                    'source': 'geodata',
+                    'paint': {
+                        'line-width': (paint['line-width'] ? paint['line-width'] : 10) + 15, // much wider
+                        'line-opacity': 0
+                    }
+                });
+            }
         }
 
         // フライ・トゥー指定
@@ -107,7 +119,9 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
         }
 
         // ポップアップ表示の設定
-        map.on('click', 'geodata-layer', function (e) {
+        // For line layers, use the interaction layer for events
+        const eventLayer = (type === 'line') ? 'geodata-interaction-layer' : 'geodata-layer';
+        map.on('click', eventLayer, function (e) {
             const feature = e.features[0];
             const popupName = feature.properties.popup_name || 'N/A';
             const popupValue = feature.properties.popup_value || ''; 
@@ -118,10 +132,10 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
                 .setHTML(`<strong>${popupName}:</strong>${popupValue} ${popupUnit}`)
                 .addTo(map);
         });
-        map.on('mouseenter', 'geodata-layer', function () {
+        map.on('mouseenter', eventLayer, function () {
             map.getCanvas().style.cursor = 'pointer';
         });
-        map.on('mouseleave', 'geodata-layer', function () {
+        map.on('mouseleave', eventLayer, function () {
             map.getCanvas().style.cursor = '';
         });
 
@@ -383,6 +397,7 @@ setupMap(
     'flight_network_map', 
     path_flight_network, 
     'line', { 
+        'line-width': 1,
         'line-color': 'green' 
     },
     zoom=2,
@@ -397,10 +412,11 @@ setupMap(
     'railway_network_map', 
     './data/map/infrastructure/railway_network/geojson/railway_network_' + countryCode.toLowerCase() + '.geojson', 
     'line', { 
+        'line-width': 2,
         'line-color': 'red' 
     },
     zoom=5,
-    maxZoom=8,
+    maxZoom=15,
     pitch=0
 )
 
@@ -411,6 +427,7 @@ setupMap(
     'highway_network_map', 
     './data/map/infrastructure/highway_network/geojson/highway_network_' + countryCode.toLowerCase() + '.geojson', 
     'line', { 
+        'line-width': 2,
         'line-color': 'blue'
     },
     zoom=5,
