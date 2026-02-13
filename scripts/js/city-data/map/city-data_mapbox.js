@@ -421,6 +421,113 @@ setupMap(
 );
 
 /* -------------------------------------------------------------
+    空き家マップ (総数)
+------------------------------------------------------------- */
+var vacant_house_total = './data/map/demographics/vacant_house/countries/geojson/vacant_house_total_' + countryCode.toLowerCase() + '.geojson';
+setupMap(
+    'vacant_house_total_map', 
+    vacant_house_total, 
+    'fill-extrusion',
+        {
+            'fill-extrusion-color': [
+                'case',
+                ['==', ['get', 'total'], null],  // If total is null
+                'rgba(50, 136, 189, 0.5)',      // White with 50% opacity
+                [                                 // Otherwise, interpolate
+                    'interpolate',
+                    ['linear'],
+                    ['get', 'total'],
+                    0,      '#3288bd',
+                    50000,  '#d53e4f',
+                    100000, '#c62240',
+                    150000, '#b31535',
+                    200000, '#9f0729',
+                    250000, '#8b001d',
+                    300000, '#7a3c1c'
+                ]
+            ],
+            'fill-extrusion-height': ['*', ['coalesce', ['get', 'total'], 0], 0.2],
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 1.0,
+        },
+    zoom=5,
+    maxZoom=10,
+    pitch=30,
+);
+
+/* -------------------------------------------------------------
+    空き家マップ (密度)
+------------------------------------------------------------- */
+var vacant_house_density = './data/map/demographics/vacant_house/countries/geojson/vacant_house_density_' + countryCode.toLowerCase() + '.geojson';
+setupMap(
+    'vacant_house_density_map', 
+    vacant_house_density, 
+    'fill-extrusion',
+        {
+        'fill-extrusion-color': [
+            'case',
+                ['==', ['get', 'vacant_house_density'], null],  // If density is null
+                'rgba(50, 136, 189, 0.5)',      // White with 50% opacity,
+                ['interpolate',
+                ['linear'],
+                ['coalesce', ['get', 'vacant_house_density'], 0],
+                0,    '#3b0f70', // 0
+                500,  '#d03463', // 500
+                1000,  '#e54753', // 600
+                1500,  '#f36240', // 700
+                2000,  '#fb812d', // 800
+                2500,  '#fca51a', // 900
+                3000, '#f7cb15']  // 1000+  
+            ],
+            'fill-extrusion-height': ['*', ['coalesce', ['get', 'vacant_house_density'], 0], 50.0],
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 1.0,
+        },
+    zoom=5,
+    maxZoom=10,
+    pitch=30,
+);
+
+/* -------------------------------------------------------------
+    空き家マップ (人口比率)
+------------------------------------------------------------- */
+var vacant_house_ratio = './data/map/demographics/vacant_house/countries/geojson/vacant_house_ratio_' + countryCode.toLowerCase() + '.geojson';
+setupMap(
+    'vacant_house_ratio_map', 
+    vacant_house_ratio, 
+    'fill-extrusion',
+        {
+            'fill-extrusion-color': [
+                'case',
+                ['==', ['get', 'vacant_house_ratio'], null],  // If ratio is null
+                'rgba(50, 136, 189, 0.5)',      // White with 50% opacity
+                [                                 // Otherwise, interpolate
+                    'interpolate',
+                    ['linear'],
+                    ['get', 'vacant_house_ratio'],
+                        0.0, '#3288bd',
+                        0.1, '#66c2a5',
+                        0.2, '#abdda4',
+                        0.3, '#e6f598',
+                        0.4, '#fee08b',
+                        0.5, '#fdae61',
+                        0.6, '#f46d43',
+                        0.7, '#d53e4f',
+                        0.8, '#c62240',
+                        0.9, '#b31535',
+                        1.0, '#9f0729'
+                ]
+            ],
+            'fill-extrusion-height': ['*', ['coalesce', ['get', 'vacant_house_ratio'], 0], 100000],
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 1.0,
+        },
+    zoom=5,
+    maxZoom=10,
+    pitch=30,
+);
+
+/* -------------------------------------------------------------
     フライト・ネットワーク・マップ
 ------------------------------------------------------------- */
 var path_flight_network = './data/map/infrastructure/flight_network/geojson/fly-' + cityParam.toLowerCase() + '_linestring.geojson';

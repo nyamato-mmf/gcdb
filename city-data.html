@@ -162,6 +162,7 @@
                                 <a href="#population" class="btn btn-outline-secondary btn-sm w-100 mb-1">Population</a>
                                 <a href="#employment" class="btn btn-outline-secondary btn-sm w-100 mb-1">Employment</a>
                                 <a href="#foreign_resident" class="btn btn-outline-secondary btn-sm w-100 mb-1">Foreign Resident</a>
+                                <a href="#vacant_house" class="btn btn-outline-secondary btn-sm w-100 mb-1">Vacant House</a>
                             </div>
                         </div>
                     </div>
@@ -306,13 +307,35 @@
                                 <div id="employment_3rd_industry_map" class="bg-light border" style="height: 350px;"></div>
                             </div>
                         </div>
-                    <!-- ----------------------------------------------------------------------------
-                    外国人居住者
-                    ---------------------------------------------------------------------------- -->
-                    <div class="row mt-3">
-                        <h3 id="foreign_resident" class="display-6">| Foreign Residents Density</h3>
-                        <div id="foreign_resident_map" class="col-sm-12 p-3 bg-light border" style="height: 500px;"></div>
-                    </div>
+                        <!-- ----------------------------------------------------------------------------
+                        外国人居住者
+                        ---------------------------------------------------------------------------- -->
+                        <div class="row mt-3">
+                            <h3 id="foreign_resident" class="display-6">| Foreign Residents Density</h3>
+                            <div id="foreign_resident_map" class="col-sm-12 p-3 bg-light border" style="height: 500px;"></div>
+                        </div>
+                        <!-- ----------------------------------------------------------------------------
+                        空き家
+                        ---------------------------------------------------------------------------- -->
+                        <div class="row mt-3">
+                            <h3 id="vacant_house" class="display-6">| Vacant House Density</h3>
+                        </div>
+                            <div class="row text-center">
+                                <div class="col-sm-4 p-2">
+                                    <h5 class="mb-2">Total</h5>
+                                    <div id="vacant_house_total_map" class="bg-light border" style="height: 350px;"></div>
+                                </div>
+    
+                                <div class="col-sm-4 p-2">
+                                    <h5 class="mb-2">Density</h5>
+                                    <div id="vacant_house_density_map" class="bg-light border" style="height: 350px;"></div>
+                                </div>
+    
+                                <div class="col-sm-4 p-2">
+                                    <h5 class="mb-2">Ratio</h5>
+                                    <div id="vacant_house_ratio_map" class="bg-light border" style="height: 350px;"></div>
+                                </div>
+                            </div>
                 </section>
                 <!-- ----------------------------------------------------------------------------
                     交通インフラ
