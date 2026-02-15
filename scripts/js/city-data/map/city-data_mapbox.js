@@ -50,8 +50,8 @@ updateCityDisplay(cityParam);
 // =========================================================================
 // Mapbox セットアップ
 // =========================================================================
-// Mapbox アクセストークン設定
-const mapboxToken = 'pk.eyJ1IjoibnlhbWF0byIsImEiOiJja2Y4dzNkOW8wY3MwMnFvM29iNnJzNzVzIn0.GHlHwu3r5YjKBU3qAKvccQ'; // pkで始まる公開トークン
+// Mapbox アクセストークン設定 (pkで始まる公開トークンを使用)
+const mapboxToken = 'pk.eyJ1IjoibnlhbWF0byIsImEiOiJja2Y4dzNkOW8wY3MwMnFvM29iNnJzNzVzIn0.GHlHwu3r5YjKBU3qAKvccQ'; 
 mapboxgl.accessToken = mapboxToken;
 
 // フライ・トゥー座標設定
