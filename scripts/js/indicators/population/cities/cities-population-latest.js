@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 }
                             },
                             // Set the max value here
-                            max: 16  // <-- Change this number to your desired maximum
+                            max: 16
                         }
                     }
                     

@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const filteredData = data.filter(entry => entry["Country_Name"] && entry["Country_Code"]); 
             
             // Extract labels (country_Name names) and values (populations)
-            const countries = filteredData.map(entry => entry["Country_Name"]);
-            const populations = filteredData.map(entry => Math.floor(entry.Population/1000000));
+            const countries = filteredData.map(entry => entry["City/Country"]);
+            const populations = filteredData.map(entry => Math.floor(entry.Ratio*100));
             const backgroundColors = filteredData.map(entry => 
                 Color_obj_countries_cities_population_ratio[entry["Country_Code"]] || "gray" // Default to gray if no color
             );
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 },
                                 generateLabels: function() {
                                     return [{
-                                        text: "Population by country", // Graph title
+                                        text: "City / Country Ratio", // Graph title
                                         fillStyle: "transparent", // Hide colour box
                                         strokeStyle: "transparent",
                                         hidden: false
@@ -102,11 +102,13 @@ document.addEventListener("DOMContentLoaded", function() {
                             },
                             title: {
                                 display: true,
-                                text: "Population (millions)",
+                                text: "Ratio (%)",
                                 font: {
                                     size: 18 // Y-axis title
                                 }
-                            }
+                            },
+                            // Set the max value here
+                            max: 20
                         }
                     }
                 }

@@ -1,7 +1,7 @@
-﻿Country_Name,Country_Code,Population
-UK,GB,68350000
-USA,US,334914895
-Japan,JP,124516650
-France,FR,68287487
-Singapore,SG,5917648
-Korea,KR,51712619
+﻿Country_Name,Country_Code,Population,City_Name,City_Code,2020,City/Country,Ratio
+UK,GB,68350000,London,LON,8799727,London / UK,0.128745091
+USA,US,334914895,New York,NYC,8467513,New York / USA,0.025282581
+Japan,JP,124516650,Tokyo,TYO,14047594,Tokyo / Japan,0.112816993
+France,FR,68287487,Paris,PAR,2113705,Paris / France,0.030953035
+Singapore,,,Singapore,,,,
+Korea,,,Seoul,,,,
