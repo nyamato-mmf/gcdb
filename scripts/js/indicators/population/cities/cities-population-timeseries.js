@@ -115,7 +115,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                 font: {
                                     size: 18 // Y-axis title font size
                                 }
-                            }
+                            },
+                            // Set the max value here
+                            max: 16
                         }
                     }
                 }
