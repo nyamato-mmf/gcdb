@@ -51,6 +51,7 @@ updateCityDisplay(cityParam);
 // Mapbox セットアップ
 // =========================================================================
 // Mapbox アクセストークン設定 (pkで始まる公開トークンを使用)
+// 2024-06-01: トークンを更新（古いトークンではGitHubのセキュリティチェックをbyPassできなかったため、MapboxのURL制限登録をした新しいトークンを作成した）
 const mapboxToken = 'pk.eyJ1IjoibnlhbWF0byIsImEiOiJjbWxvdWE5cnUwOHQyM2Rxems3ZHFjNHRtIn0.FE09FM6lxL7dZSJtsLAFEg'; 
 mapboxgl.accessToken = mapboxToken;
 
