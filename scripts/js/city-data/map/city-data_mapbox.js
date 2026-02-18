@@ -481,7 +481,7 @@ setupMap(
                 2500,  '#fca51a', // 900
                 3000, '#f7cb15']  // 1000+  
             ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'vacant_house_density'], 0], 50.0],
+            'fill-extrusion-height': ['*', ['coalesce', ['get', 'vacant_house_density'], 0], 10.0],
             'fill-extrusion-base': 0,
             'fill-extrusion-opacity': 1.0,
         },
@@ -520,7 +520,7 @@ setupMap(
                         1.0, '#9f0729'
                 ]
             ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'vacant_house_ratio'], 0], 100000],
+            'fill-extrusion-height': ['*', ['coalesce', ['get', 'vacant_house_ratio'], 0], 10000],
             'fill-extrusion-base': 0,
             'fill-extrusion-opacity': 1.0,
         },
