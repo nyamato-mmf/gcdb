@@ -1,0 +1,75 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "The Toyomi Tower Marine & Sky",
+        "popup_value": "2026"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.650027,
+          35.6764225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "Marunouchi 3-1 Project",
+        "popup_value": "2030"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.761055,
+          35.6767943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "Miyamasuzaka Area Type 1 Urban Redevelopment Project",
+        "popup_value": "2031"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.650027,
+          35.6764225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "Sengakuji Station District Type 2 Urban Redevelopment",
+        "popup_value": "2031"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.650027,
+          35.6764225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "popup_name": "ONE PARK × ONE TOWN",
+        "popup_value": "TBD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6981638,
+          35.7023361
+        ]
+      }
+    }
+  ]
+}
