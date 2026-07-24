@@ -22,7 +22,7 @@ const cityMap = {
     SIN: "SINGAPORE",
     SEL: "SEOUL",
 };
-//  都市コードと国コードのマッピング
+// 都市コードと国コードのマッピング
 const cityCountryMap = {
     LON: 'gb',
     NYC: 'us',
@@ -50,10 +50,15 @@ updateCityDisplay(cityParam);
 // =========================================================================
 // Mapbox セットアップ
 // =========================================================================
-// Mapbox アクセストークン設定 (pkで始まる公開トークンを使用)
-// 2026-02-16: トークンを更新（古いトークンではGitHubのセキュリティチェックをbyPassできなかったため、MapboxのURL制限登録をした新しいトークンを作成した）
-const mapboxToken = 'pk.eyJ1IjoibnlhbWF0byIsImEiOiJjbWxvdWE5cnUwOHQyM2Rxems3ZHFjNHRtIn0.FE09FM6lxL7dZSJtsLAFEg'; 
-mapboxgl.accessToken = mapboxToken;
+// 環境に応じてトークンを切り替える
+const isDev = window.location.hostname === 'localhost' 
+        || window.location.hostname === '127.0.0.1';
+
+const MAPBOX_TOKEN = isDev
+? 'pk.eyJ1IjoibnlhbWF0byIsImEiOiJja2Y4dzNkOW8wY3MwMnFvM29iNnJzNzVzIn0.GHlHwu3r5YjKBU3qAKvccQ'    // 開発用
+: 'pk.eyJ1IjoibnlhbWF0byIsImEiOiJjbWxvdWE5cnUwOHQyM2Rxems3ZHFjNHRtIn0.FE09FM6lxL7dZSJtsLAFEg';   // 本番用 (GitHub Pages)
+
+mapboxgl.accessToken = MAPBOX_TOKEN;
 
 // フライ・トゥー座標設定
 const flyLocations = {
@@ -66,7 +71,7 @@ const flyLocations = {
 };
 
 // 地図のセットアップ関数
-function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
+function setupMap(containerId, geojsonPath, type, paint, zoom = 5, maxZoom = 15, pitch = 0) {
     // Show spinner
     const spinner = document.getElementById(`spinner-${containerId.replace('_map','')}`);
     if (spinner) spinner.style.display = 'block';
@@ -76,7 +81,7 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
         container: containerId,
         style: "mapbox://styles/nyamato/ckpx9lvxz0lj217pernr3nomm",
         zoom: 1,
-        maxZoom: maxZoom || 15,
+        maxZoom: maxZoom,
         center: [-0.13048539486171945, 51.52163143835778]
     });
 
@@ -102,7 +107,7 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
                     'type': 'line',
                     'source': 'geodata',
                     'paint': {
-                        'line-width': (paint['line-width'] ? paint['line-width'] : 10) + 15, // much wider
+                        'line-width': (paint && paint['line-width'] ? paint['line-width'] : 10) + 15, // much wider
                         'line-opacity': 0
                     }
                 });
@@ -115,7 +120,7 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
             map.flyTo({
                 center: loc.center,
                 zoom: zoom,
-                pitch: pitch || 0,
+                pitch: pitch,
                 essential: true
             });
         }
@@ -124,6 +129,7 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
         // For line layers, use the interaction layer for events
         const eventLayer = (type === 'line') ? 'geodata-interaction-layer' : 'geodata-layer';
         map.on('click', eventLayer, function (e) {
+            if (!e.features || e.features.length === 0) return;
             const feature = e.features[0];
 
             const popupName  = feature.properties.popup_name || 'N/A';
@@ -188,7 +194,6 @@ function setupMap(containerId, geojsonPath, type, paint, zoom, maxZoom, pitch) {
 
     map.addControl(new mapboxgl.FullscreenControl());
     return map;  
-    
 }
 
 
@@ -204,18 +209,19 @@ var path_boundary = './data/map/boundary/geojson/boundary_' + countryCode.toLowe
 setupMap(
     'boundary_map', 
     path_boundary, 
-    'fill', {
-    'fill-color': [
-        'case',
-        ['==', ['get', 'city'], 1], 'red',
-        ['==', ['get', 'metropolitan'], 1], 'blue',
-        'green'
-    ],
+    'fill', 
+    {
+        'fill-color': [
+            'case',
+            ['==', ['get', 'city'], 1], 'red',
+            ['==', ['get', 'metropolitan'], 1], 'blue',
+            'green'
+        ],
         'fill-opacity': 0.5,
     },
-    zoom=5,
-    maxZoom=15,
-    pitch=0
+    5,
+    15,
+    0
 );
 
 /* -------------------------------------------------------------
@@ -242,14 +248,14 @@ setupMap(
                 40000,  '#9f0729',    // 35000 から 40000 未満
                 45000,  '#8b001d',    // 40000 から 45000 未満
                 50000,  '#7a0014'     // 45000 以上の値 (50000+ を含む)
-            ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'population_density'], 0], 0.5],
-            'fill-extrusion-base': 0,
-            'fill-extrusion-opacity': 1.0,
-        },
-    zoom=5,
-    maxZoom=10,
-    pitch=30
+        ],
+        'fill-extrusion-height': ['*', ['coalesce', ['get', 'population_density'], 0], 0.5],
+        'fill-extrusion-base': 0,
+        'fill-extrusion-opacity': 1.0,
+    },
+    5,
+    10,
+    30
 );
 
 /* -------------------------------------------------------------
@@ -276,14 +282,14 @@ setupMap(
                 40000,  '#9f0729',    // 35000 から 40000 未満
                 45000,  '#8b001d',    // 40000 から 45000 未満
                 50000,  '#7a0014'     // 45000 以上の値 (50000+ を含む)
-            ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'employee_density'], 0], 0.5],
-            'fill-extrusion-base': 0,
-            'fill-extrusion-opacity': 1.0,
-        },
-    zoom=5,
-    maxZoom=10,
-    pitch=30
+        ],
+        'fill-extrusion-height': ['*', ['coalesce', ['get', 'employee_density'], 0], 0.5],
+        'fill-extrusion-base': 0,
+        'fill-extrusion-opacity': 1.0,
+    },
+    5,
+    10,
+    30
 );
 
 /* -------------------------------------------------------------
@@ -299,25 +305,25 @@ setupMap(
             'interpolate',
             ['linear'],
             ['coalesce', ['get', 'employee_density'], 0],
-                0,      '#3288bd',    // 0 未満の値
-                5,   '#83e19d',    // 0 から 5000 未満
-                10,  '#fee08b',    // 5000 から 10000 未満
-                15,  '#f9993b',    // 10000 から 15000 未満
-                20,  '#ef5305',    // 15000 から 20000 未満
-                25,  '#d53e4f',    // 20000 から 25000 未満
-                30,  '#c62240',    // 25000 から 30000 未満
-                35,  '#b31535',    // 30000 から 35000 未満
-                40,  '#9f0729',    // 35000 から 40000 未満
-                45,  '#8b001d',    // 40000 から 45000 未満
-                50,  '#7a0014'     // 45000 以上の値 (50000+ を含む)
-            ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'employee_density'], 0], 0.5],
-            'fill-extrusion-base': 0,
-            'fill-extrusion-opacity': 1.0,
-        },
-    zoom=5,
-    maxZoom=10,
-    pitch=30,
+                0,      '#3288bd',
+                5,      '#83e19d',
+                10,     '#fee08b',
+                15,     '#f9993b',
+                20,     '#ef5305',
+                25,     '#d53e4f',
+                30,     '#c62240',
+                35,     '#b31535',
+                40,     '#9f0729',
+                45,     '#8b001d',
+                50,     '#7a0014'
+        ],
+        'fill-extrusion-height': ['*', ['coalesce', ['get', 'employee_density'], 0], 0.5],
+        'fill-extrusion-base': 0,
+        'fill-extrusion-opacity': 1.0,
+    },
+    5,
+    10,
+    30
 );
 
 /* -------------------------------------------------------------
@@ -333,25 +339,25 @@ setupMap(
             'interpolate',
             ['linear'],
             ['coalesce', ['get', 'employee_density'], 0],
-                0,      '#3288bd',    // 0 未満の値
-                1000,   '#83e19d',    // 0 から 5000 未満
-                2000,  '#fee08b',    // 5000 から 10000 未満
-                3000,  '#f9993b',    // 10000 から 15000 未満
-                4000,  '#ef5305',    // 15000 から 20000 未満
-                5000,  '#d53e4f',    // 20000 から 25000 未満
-                6000,  '#c62240',    // 25000 から 30000 未満
-                7000,  '#b31535',    // 30000 から 35000 未満
-                8000,  '#9f0729',    // 35000 から 40000 未満
-                9000,  '#8b001d',    // 40000 から 45000 未満
-                10000,  '#7a0014'     // 45000 以上の値 (50000+ を含む)
-            ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'employee_density'], 0], 0.5],
-            'fill-extrusion-base': 0,
-            'fill-extrusion-opacity': 1.0,
-        },
-    zoom=5,
-    maxZoom=10,
-    pitch=30
+                0,      '#3288bd',
+                1000,   '#83e19d',
+                2000,   '#fee08b',
+                3000,   '#f9993b',
+                4000,   '#ef5305',
+                5000,   '#d53e4f',
+                6000,   '#c62240',
+                7000,   '#b31535',
+                8000,   '#9f0729',
+                9000,   '#8b001d',
+                10000,  '#7a0014'
+        ],
+        'fill-extrusion-height': ['*', ['coalesce', ['get', 'employee_density'], 0], 0.5],
+        'fill-extrusion-base': 0,
+        'fill-extrusion-opacity': 1.0,
+    },
+    5,
+    10,
+    30
 );
 
 /* -------------------------------------------------------------
@@ -367,25 +373,25 @@ setupMap(
             'interpolate',
             ['linear'],
             ['coalesce', ['get', 'employee_density'], 0],
-                0,      '#3288bd',    // 0 未満の値
-                5000,   '#83e19d',    // 0 から 5000 未満
-                10000,  '#fee08b',    // 5000 から 10000 未満
-                15000,  '#f9993b',    // 10000 から 15000 未満
-                20000,  '#ef5305',    // 15000 から 20000 未満
-                25000,  '#d53e4f',    // 20000 から 25000 未満
-                30000,  '#c62240',    // 25000 から 30000 未満
-                35000,  '#b31535',    // 30000 から 35000 未満
-                40000,  '#9f0729',    // 35000 から 40000 未満
-                45000,  '#8b001d',    // 40000 から 45000 未満
-                50000,  '#7a0014'     // 45000 以上の値 (50000+ を含む)
-            ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'employee_density'], 0], 0.5],
-            'fill-extrusion-base': 0,
-            'fill-extrusion-opacity': 1.0,
-        },
-    zoom=5,
-    maxZoom=10,
-    pitch=30
+                0,      '#3288bd',
+                5000,   '#83e19d',
+                10000,  '#fee08b',
+                15000,  '#f9993b',
+                20000,  '#ef5305',
+                25000,  '#d53e4f',
+                30000,  '#c62240',
+                35000,  '#b31535',
+                40000,  '#9f0729',
+                45000,  '#8b001d',
+                50000,  '#7a0014'
+        ],
+        'fill-extrusion-height': ['*', ['coalesce', ['get', 'employee_density'], 0], 0.5],
+        'fill-extrusion-base': 0,
+        'fill-extrusion-opacity': 1.0,
+    },
+    5,
+    10,
+    30
 );
 
 /* -------------------------------------------------------------
@@ -393,7 +399,7 @@ setupMap(
 ------------------------------------------------------------- */
 var foreign_resident_boundary = './data/map/demographics/foreign_resident/countries/geojson/foreign_resident_' + countryCode.toLowerCase() + '.geojson';
 setupMap(
-    'foreign_resident_map', // Same ID
+    'foreign_resident_map', 
     foreign_resident_boundary, 
     'fill-extrusion', 
     {
@@ -401,25 +407,25 @@ setupMap(
             'interpolate',
             ['linear'],
             ['coalesce', ['get', 'foreign_resident_density'], 0],
-            0,    '#3b0f70', // 0
-            100,  '#59157e', // 100
-            200,  '#781c81', // 200
-            300,  '#98217d', // 300
-            400,  '#b82773', // 400
-            500,  '#d03463', // 500
-            600,  '#e54753', // 600
-            700,  '#f36240', // 700
-            800,  '#fb812d', // 800
-            900,  '#fca51a', // 900
-            1000, '#f7cb15'  // 1000+
+            0,    '#3b0f70',
+            100,  '#59157e',
+            200,  '#781c81',
+            300,  '#98217d',
+            400,  '#b82773',
+            500,  '#d03463',
+            600,  '#e54753',
+            700,  '#f36240',
+            800,  '#fb812d',
+            900,  '#fca51a',
+            1000, '#f7cb15'
         ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'foreign_resident_density'], 0], 0.5],
-            'fill-extrusion-base': 0,
-            'fill-extrusion-opacity': 1.0,
-        },
-    zoom=5,
-    maxZoom=10,
-    pitch=30
+        'fill-extrusion-height': ['*', ['coalesce', ['get', 'foreign_resident_density'], 0], 0.5],
+        'fill-extrusion-base': 0,
+        'fill-extrusion-opacity': 1.0,
+    },
+    5,
+    10,
+    30
 );
 
 /* -------------------------------------------------------------
@@ -430,31 +436,31 @@ setupMap(
     'vacant_house_total_map', 
     vacant_house_total, 
     'fill-extrusion',
-        {
-            'fill-extrusion-color': [
-                'case',
-                ['==', ['get', 'total'], null],  // If total is null
-                'rgba(50, 136, 189, 0.5)',      // White with 50% opacity
-                [                                 // Otherwise, interpolate
-                    'interpolate',
-                    ['linear'],
-                    ['get', 'total'],
-                    0,      '#3288bd',
-                    50000,  '#d53e4f',
-                    100000, '#c62240',
-                    150000, '#b31535',
-                    200000, '#9f0729',
-                    250000, '#8b001d',
-                    300000, '#7a3c1c'
-                ]
-            ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'total'], 0], 0.2],
-            'fill-extrusion-base': 0,
-            'fill-extrusion-opacity': 1.0,
-        },
-    zoom=5,
-    maxZoom=10,
-    pitch=30,
+    {
+        'fill-extrusion-color': [
+            'case',
+            ['==', ['get', 'total'], null],
+            'rgba(50, 136, 189, 0.5)',
+            [
+                'interpolate',
+                ['linear'],
+                ['get', 'total'],
+                0,      '#3288bd',
+                50000,  '#d53e4f',
+                100000, '#c62240',
+                150000, '#b31535',
+                200000, '#9f0729',
+                250000, '#8b001d',
+                300000, '#7a3c1c'
+            ]
+        ],
+        'fill-extrusion-height': ['*', ['coalesce', ['get', 'total'], 0], 0.2],
+        'fill-extrusion-base': 0,
+        'fill-extrusion-opacity': 1.0,
+    },
+    5,
+    10,
+    30
 );
 
 /* -------------------------------------------------------------
@@ -465,29 +471,31 @@ setupMap(
     'vacant_house_density_map', 
     vacant_house_density, 
     'fill-extrusion',
-        {
+    {
         'fill-extrusion-color': [
             'case',
-                ['==', ['get', 'vacant_house_density'], null],  // If density is null
-                'rgba(50, 136, 189, 0.5)',      // White with 50% opacity,
-                ['interpolate',
+            ['==', ['get', 'vacant_house_density'], null],
+            'rgba(50, 136, 189, 0.5)',
+            [
+                'interpolate',
                 ['linear'],
                 ['coalesce', ['get', 'vacant_house_density'], 0],
-                0,    '#3b0f70', // 0
-                500,  '#d03463', // 500
-                1000,  '#e54753', // 600
-                1500,  '#f36240', // 700
-                2000,  '#fb812d', // 800
-                2500,  '#fca51a', // 900
-                3000, '#f7cb15']  // 1000+  
-            ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'vacant_house_density'], 0], 10.0],
-            'fill-extrusion-base': 0,
-            'fill-extrusion-opacity': 1.0,
-        },
-    zoom=5,
-    maxZoom=10,
-    pitch=30,
+                0,    '#3b0f70',
+                500,  '#d03463',
+                1000, '#e54753',
+                1500, '#f36240',
+                2000, '#fb812d',
+                2500, '#fca51a',
+                3000, '#f7cb15'
+            ]
+        ],
+        'fill-extrusion-height': ['*', ['coalesce', ['get', 'vacant_house_density'], 0], 10.0],
+        'fill-extrusion-base': 0,
+        'fill-extrusion-opacity': 1.0,
+    },
+    5,
+    10,
+    30
 );
 
 /* -------------------------------------------------------------
@@ -498,35 +506,35 @@ setupMap(
     'vacant_house_ratio_map', 
     vacant_house_ratio, 
     'fill-extrusion',
-        {
-            'fill-extrusion-color': [
-                'case',
-                ['==', ['get', 'vacant_house_ratio'], null],  // If ratio is null
-                'rgba(50, 136, 189, 0.5)',      // White with 50% opacity
-                [                                 // Otherwise, interpolate
-                    'interpolate',
-                    ['linear'],
-                    ['get', 'vacant_house_ratio'],
-                        0.0, '#3288bd',
-                        0.1, '#66c2a5',
-                        0.2, '#abdda4',
-                        0.3, '#e6f598',
-                        0.4, '#fee08b',
-                        0.5, '#fdae61',
-                        0.6, '#f46d43',
-                        0.7, '#d53e4f',
-                        0.8, '#c62240',
-                        0.9, '#b31535',
-                        1.0, '#9f0729'
-                ]
-            ],
-            'fill-extrusion-height': ['*', ['coalesce', ['get', 'vacant_house_ratio'], 0], 10000],
-            'fill-extrusion-base': 0,
-            'fill-extrusion-opacity': 1.0,
-        },
-    zoom=5,
-    maxZoom=10,
-    pitch=30,
+    {
+        'fill-extrusion-color': [
+            'case',
+            ['==', ['get', 'vacant_house_ratio'], null],
+            'rgba(50, 136, 189, 0.5)',
+            [
+                'interpolate',
+                ['linear'],
+                ['get', 'vacant_house_ratio'],
+                0.0, '#3288bd',
+                0.1, '#66c2a5',
+                0.2, '#abdda4',
+                0.3, '#e6f598',
+                0.4, '#fee08b',
+                0.5, '#fdae61',
+                0.6, '#f46d43',
+                0.7, '#d53e4f',
+                0.8, '#c62240',
+                0.9, '#b31535',
+                1.0, '#9f0729'
+            ]
+        ],
+        'fill-extrusion-height': ['*', ['coalesce', ['get', 'vacant_house_ratio'], 0], 10000],
+        'fill-extrusion-base': 0,
+        'fill-extrusion-opacity': 1.0,
+    },
+    5,
+    10,
+    30
 );
 
 /* -------------------------------------------------------------
@@ -536,14 +544,15 @@ var path_flight_network = './data/map/infrastructure/flight_network/geojson/fly-
 setupMap(
     'flight_network_map', 
     path_flight_network, 
-    'line', { 
+    'line', 
+    { 
         'line-width': 1,
         'line-color': 'green' 
     },
-    zoom=2,
-    maxZoom=8,
-    pitch=0
-)
+    2,
+    8,
+    0
+);
 
 /* -------------------------------------------------------------
     鉄道路線マップ
@@ -551,14 +560,15 @@ setupMap(
 setupMap(
     'railway_network_map', 
     './data/map/infrastructure/railway_network/geojson/railway_network_' + countryCode.toLowerCase() + '.geojson', 
-    'line', { 
+    'line', 
+    { 
         'line-width': 2,
         'line-color': 'red' 
     },
-    zoom=5,
-    maxZoom=15,
-    pitch=0
-)
+    5,
+    15,
+    0
+);
 
 /* -------------------------------------------------------------
     高速道路路線マップ
@@ -566,14 +576,15 @@ setupMap(
 setupMap(
     'highway_network_map', 
     './data/map/infrastructure/highway_network/geojson/highway_network_' + countryCode.toLowerCase() + '.geojson', 
-    'line', { 
+    'line', 
+    { 
         'line-width': 2,
         'line-color': 'blue'
     },
-    zoom=5,
-    maxZoom=15,
-    pitch=0
-)
+    5,
+    15,
+    0
+);
 
 /* -------------------------------------------------------------
     開発プロジェクトマップ
@@ -598,8 +609,7 @@ setupMap(
         'circle-stroke-color': '#ffffff',
         'circle-stroke-width': 1,
     },
-    zoom=10,
-    maxZoom=15,
-    pitch=0
+    10,
+    15,
+    0
 );
-
