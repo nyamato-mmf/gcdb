@@ -1,9 +1,9 @@
 // =========================================================================
 // City Data Mapbox JS
 // =========================================================================
-const DEFAULT_CITY = "TYO";
+const DEFAULT_CITY = "tyo";
 const params = new URLSearchParams(window.location.search);
-const cityParam = params.get("city")?.toUpperCase() || DEFAULT_CITY;
+const cityParam = params.get("city")?.toLowerCase() || DEFAULT_CITY;
 
 // クエリパラメータのハッシュがあった場合は削除する（初期化）
 function removeHashFromUrl() {
