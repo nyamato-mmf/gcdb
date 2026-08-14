@@ -60,6 +60,7 @@ const MAPBOX_TOKEN = isDev
 
 mapboxgl.accessToken = MAPBOX_TOKEN;
 
+
 // フライ・トゥー座標設定
 const flyLocations = {
     LON: { center: [-0.1278, 51.5074]},
