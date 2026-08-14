@@ -15,21 +15,21 @@ removeHashFromUrl();
 
 // 都市コードと都市名のマッピング
 const cityMap = {
-    LON: "LONDON",
-    NYC: "NEW YORK",
-    TYO: "TOKYO",
-    PAR: "PARIS",
-    SIN: "SINGAPORE",
-    SEL: "SEOUL",
+    lon: "LONDON",
+    nyc: "NEW YORK",
+    tyo: "TOKYO",
+    par: "PARIS",
+    sin: "SINGAPORE",
+    sel: "SEOUL",
 };
 //  都市コードと国コードのマッピング
 const cityCountryMap = {
-    LON: 'gb',
-    NYC: 'us',
-    TYO: 'jp',
-    PAR: 'fr',
-    SIN: 'sg',
-    SEL: 'kr'
+    lon: 'gb',
+    nyc: 'us',
+    tyo: 'jp',
+    par: 'fr',
+    sin: 'sg',
+    sel: 'kr'
 };
 
 // 都市名と国旗の更新
@@ -63,12 +63,12 @@ mapboxgl.accessToken = MAPBOX_TOKEN;
 
 // フライ・トゥー座標設定
 const flyLocations = {
-    LON: { center: [-0.1278, 51.5074]},
-    NYC: { center: [-73.9739, 40.7555]},
-    TYO: { center: [139.7529, 35.6852]},
-    PAR: { center: [2.3522, 48.8566]},
-    SIN: { center: [103.8520, 1.2903]},
-    SEL: { center: [126.9780, 37.5665]}
+    lon: { center: [-0.1278, 51.5074]},
+    nyc: { center: [-73.9739, 40.7555]},
+    tyo: { center: [139.7529, 35.6852]},
+    par: { center: [2.3522, 48.8566]},
+    sin: { center: [103.8520, 1.2903]},
+    sel: { center: [126.9780, 37.5665]}
 };
 
 // 地図のセットアップ関数
