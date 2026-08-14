@@ -51,14 +51,15 @@ updateCityDisplay(cityParam);
 // Mapbox セットアップ
 // =========================================================================
 // 環境に応じてトークンを切り替える
-const isDev = window.location.hostname === 'localhost' 
-        || window.location.hostname === '127.0.0.1';
+// 開発用トークン
+const DEV_TOKEN  = 'pk.eyJ1IjoibnlhbWF0byIsImEiOiJja2Y4dzNkOW8wY3MwMnFvM29iNnJzNzVzIn0.GHlHwu3r5YjKBU3qAKvccQ';
+// 本番用トークン (GitHub Pages)
+const PROD_TOKEN = 'pk.eyJ1IjoibnlhbWF0byIsImEiOiJjbWxvdWE5cnUwOHQyM2Rxems3ZHFjNHRtIn0.FE09FM6lxL7dZSJtsLAFEg';
 
-const MAPBOX_TOKEN = isDev
-? 'pk.eyJ1IjoibnlhbWF0byIsImEiOiJja2Y4dzNkOW8wY3MwMnFvM29iNnJzNzVzIn0.GHlHwu3r5YjKBU3qAKvccQ'    // 開発用
-: 'pk.eyJ1IjoibnlhbWF0byIsImEiOiJjbWxvdWE5cnUwOHQyM2Rxems3ZHFjNHRtIn0.FE09FM6lxL7dZSJtsLAFEg';   // 本番用 (GitHub Pages)
+const isDev = window.location.hostname === 'localhost'
+           || window.location.hostname === '127.0.0.1';
 
-mapboxgl.accessToken = MAPBOX_TOKEN;
+mapboxgl.accessToken = isDev ? DEV_TOKEN : PROD_TOKEN;
 
 
 // フライ・トゥー座標設定
