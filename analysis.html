@@ -22,7 +22,7 @@
     <!-- Mapbox CDN -->
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
-    <title>Indicators</title>
+    <title>Analysis</title>
 </head>
 
 <body>
@@ -106,9 +106,9 @@
             <div id="sidebar-pc" class="d-none d-lg-block col-lg-2 bg-dark text-white p-3 min-vh-100">
                     <div id="layerSwitcher" class="mb-3">
                     <fieldset>
-                        <legend class="fs-6 mb-2">INDICATOR</legend>
+                        <legend class="fs-6 mb-2">ANALYSIS</legend>
                         <div class="d-grid gap-2">
-                            <a href="#pop" class="btn btn-outline-primary btn-sm w-100">Population</a>
+                            <a href="#wcn" class="btn btn-outline-primary btn-sm w-100">World City Network</a>
                             <a href="#emp" class="btn btn-outline-primary btn-sm w-100">Employment</a>
                             <a href="#inf" class="btn btn-outline-primary btn-sm w-100">Infrastructure</a>
                         </div>
@@ -123,23 +123,18 @@
             <div class="col-lg-10 col-12 px-3">
                 <!-- 指標：人口 -->
                 <section class="row bg-light mt-3 p-3 d-flex justify-content-center">
-                    <h1 id="pop" class="display-6 fw-bold">Population</h1>
-                    <h3 id="pop-country" class="display-6">| Countries</h3>
+                    <h1 id="pop" class="display-6 fw-bold">World City Hierarchical Network</h1>
+                    <h3 id="pop-country" class="display-6">| Flight Network</h3>
                     <div class="row my-3">
-                        <!-- ★★★ 国別 人口変遷グラフ ★★★ -->
+                        <!-- ★★★ 全世界 航空ネットワーク ★★★ -->
                         <div class="col-12 col-sm-7 p-5 bg-light p-3" style="height: 500px;">
                             <canvas id="countries-population-timeseries" class="chart-canvas"></canvas>
-                            <small class="mb-5">Source: XXXXX</small>
-                        </div>
-                        <!-- ★★★ 国別 人口棒グラフ ★★★ -->
-                        <div class="col-12 col-sm-5 p-5 bg-light p-3" style="height: 500px;">
-                            <canvas id="countries-population-latest" class="chart-canvas"></canvas>
                             <small class="mb-5">Source: XXXXX</small>
                         </div>
                     </div>
                     <h3 id="pop-city" class="display-6">| Cities</h3>
                     <div class="row my-3">
-                        <!-- ★★★ 都市別 人口変遷グラフ ★★★ -->
+                        <!-- ★★★ 国別 人口変遷グラフ ★★★ -->
                         <div class="col-12 col-sm-7 p-5 bg-light p-3" style="height: 500px;">
                             <canvas id="cities-population-timeseries"></canvas>
                             <small class="mb-5">Note: 該当年のデータがない場合は、最も近い年のデータを使用</small><br>
